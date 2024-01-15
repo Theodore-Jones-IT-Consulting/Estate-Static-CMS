@@ -24,6 +24,15 @@ Requirements:
 
 An example of a list of commands that can be used to do all of the steps of building a site, except for downloading MLS data is as follows. For MLS downloading see the later parts of this documentation.
 
+```
+python generate_template.py template template/data.json
+python map_maker.py template dummyweb
+python testimonials.py template dummyweb
+python listing_pages_generator.py template dummyweb/listing mls_data.geojson
+python listing_list_page.py template dummyweb/listings mls_data.geojson
+python generic_page.py template dummyweb
+```
+
 # Template HTML Files
 
 A default template can be found in the `template` folder of this repository. The template contains all content that is individual to the theme used and the site being built. 
