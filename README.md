@@ -11,7 +11,7 @@ Requirements:
 
 The page generator scripts can be found at the root folder of this repository 
 
-### Documentation: Master Template Filling Script
+## Master Template Filling Script
 
 This script is designed to fill the master HTML template with site-wide constant information such as social media links, contact phone numbers, and email addresses. 
 
