@@ -1,0 +1,2995 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "56585 South SW 368 ST& SW 214 AV Groves #6A2",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77095",
+                    "country": "United States",
+                    "prettyPrinted": "56585 South SW 368 ST& SW 214 AV Groves, The Woodlands, Texas 77095"
+                },
+                "yearBuilt": null,
+                "bedrooms": 2,
+                "mlsId": 1005160,
+                "bathrooms": 5.0,
+                "area": 2607,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-3.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 21445988,
+                "subType": null,
+                "subdivision": "Glen Arbor Sec 07",
+                "cooling": null,
+                "heating": "Forced Air,Furnace,Oil,Pellet",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "139.54 X 812.23 IRR",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Area,In Closet,In Garage,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "SimplyRETS Trial Brokerage 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "73373 West Grace Hollow Estates #B720 C",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77018",
+                    "country": "United States",
+                    "prettyPrinted": "73373 West Grace Hollow Estates, Oak Ridge, Texas 77018"
+                },
+                "yearBuilt": null,
+                "bedrooms": 2,
+                "mlsId": 1005164,
+                "bathrooms": 3.0,
+                "area": 1036,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 3242165,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Towne Lake",
+                "cooling": null,
+                "heating": "Baseboard,Individual Rm Controls,Space Heater",
+                "parking": 5,
+                "flooring": null,
+                "lotSize": "127X146",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Propane Dryer Hookup,Area",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "62993 South Wilbur Ave Pl #2035",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77007",
+                    "country": "United States",
+                    "prettyPrinted": "62993 South Wilbur Ave Pl, The Woodlands, Texas 77007"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005165,
+                "bathrooms": 7.5,
+                "area": 2018,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 774444,
+                "subType": "Condominium",
+                "subdivision": "Champions Centre Estates Sec",
+                "cooling": null,
+                "heating": "Gas Pac,Heat Pump 2nd Lvl,Split System",
+                "parking": 7,
+                "flooring": null,
+                "lotSize": "72X140X79X107",
+                "water": null,
+                "view": "None",
+                "construction": "Community,None",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "SimplyRETS Trial Brokerage 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "96294 West BEAD GRASS TER Gate #4059",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77018",
+                    "country": "United States",
+                    "prettyPrinted": "96294 West BEAD GRASS TER Gate, Cypress, Texas 77018"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005166,
+                "bathrooms": 8.0,
+                "area": 3363,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-2.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 17450668,
+                "subType": null,
+                "subdivision": "Vineyard Mdw Sec 01",
+                "cooling": null,
+                "heating": "Forced Air 90+,Geothermal,Zoned,Other",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "71 X 130",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "In Kitchen,Area,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "83115 West HARALSON Parkway #1-406",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77346",
+                    "country": "United States",
+                    "prettyPrinted": "83115 West HARALSON Parkway, The Woodlands, Texas 77346"
+                },
+                "yearBuilt": null,
+                "bedrooms": 2,
+                "mlsId": 1005168,
+                "bathrooms": 7.0,
+                "area": 1535,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home14.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-14.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 18678230,
+                "subType": "Townhouse",
+                "subdivision": "Vineyard Mdw Sec 01",
+                "cooling": null,
+                "heating": "Forced Air,Gas,Stove - Wood",
+                "parking": 5,
+                "flooring": null,
+                "lotSize": "35X163",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Stackable,Washer Included,Dryer Included,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "70446 West ARABIAN WAY Oval #1765",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77018",
+                    "country": "United States",
+                    "prettyPrinted": "70446 West ARABIAN WAY Oval, The Woodlands, Texas 77018"
+                },
+                "yearBuilt": null,
+                "bedrooms": 2,
+                "mlsId": 1005169,
+                "bathrooms": 7.0,
+                "area": 4259,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-16.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 6219566,
+                "subType": "Townhouse",
+                "subdivision": "Rice Military",
+                "cooling": null,
+                "heating": "Central Furnace,Energy Star,High Efficiency,Fireplace,Humidity Control",
+                "parking": 3,
+                "flooring": null,
+                "lotSize": "54 X 40",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Dryer Included,Outside,Electric Dryer Hookup,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "30422 West Creek Mist Harbor #18393",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77018",
+                    "country": "United States",
+                    "prettyPrinted": "30422 West Creek Mist Harbor, Oak Ridge, Texas 77018"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005170,
+                "bathrooms": 7.0,
+                "area": 5269,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-9.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 15959723,
+                "subType": null,
+                "subdivision": "Waterstone Springs",
+                "cooling": null,
+                "heating": "Forced Air,Electric,Natural Gas,Wood,Fireplace",
+                "parking": 2,
+                "flooring": null,
+                "lotSize": "145 X 160",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Dryer Included,Gas Dryer Hookup,In Garage,Washer Hookup,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "9376 South Leask Boulevard #P12",
+                    "city": "Tomball",
+                    "state": "Texas",
+                    "postalCode": "77379",
+                    "country": "United States",
+                    "prettyPrinted": "9376 South Leask Boulevard, Tomball, Texas 77379"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005171,
+                "bathrooms": 6.5,
+                "area": 2671,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-2.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 18778674,
+                "subType": null,
+                "subdivision": "Parkway Terrace",
+                "cooling": null,
+                "heating": "Boiler,Central System,Electric,Forced Air",
+                "parking": 4,
+                "flooring": null,
+                "lotSize": "127X146",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Dryer Included,In Garage,Propane Dryer Hookup,Washer Hookup,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "68827 South 99 CT Estates #783",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77375",
+                    "country": "United States",
+                    "prettyPrinted": "68827 South 99 CT Estates, Houston, Texas 77375"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005172,
+                "bathrooms": 4.5,
+                "area": 3477,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 18730333,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Terranova West Sec 03",
+                "cooling": null,
+                "heating": "Central Furnace,Energy Star,High Efficiency,Fireplace,Humidity Control",
+                "parking": 3,
+                "flooring": null,
+                "lotSize": "50/143X70/163",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Gas & Electric Dryer Hookup,Gas Dryer Hookup,Inside,Individual Room",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "46761 West Deep Step Meadow #M0606",
+                    "city": "Katy",
+                    "state": "Texas",
+                    "postalCode": "77377",
+                    "country": "United States",
+                    "prettyPrinted": "46761 West Deep Step Meadow, Katy, Texas 77377"
+                },
+                "yearBuilt": null,
+                "bedrooms": 3,
+                "mlsId": 1005173,
+                "bathrooms": 3.5,
+                "area": 2130,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 23507305,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Whispering Oaks",
+                "cooling": null,
+                "heating": "Central System,Electric",
+                "parking": 3,
+                "flooring": null,
+                "lotSize": "112X123X91",
+                "water": null,
+                "view": "None",
+                "construction": "In Closet,Washer Included,Gas & Electric Dryer Hookup,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "86242 South OCOTILLO CT Boulevard #2380",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77004",
+                    "country": "United States",
+                    "prettyPrinted": "86242 South OCOTILLO CT Boulevard, The Woodlands, Texas 77004"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005174,
+                "bathrooms": 6.0,
+                "area": 3498,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 10815936,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Barkley Square",
+                "cooling": null,
+                "heating": "Forced Air,Electric,Natural Gas,Wood,Fireplace",
+                "parking": 2,
+                "flooring": null,
+                "lotSize": "75X   100",
+                "water": null,
+                "view": "None",
+                "construction": "In Kitchen,Stackable,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "32644 South DEERCLIFF Junction #B720 C",
+                    "city": "Katy",
+                    "state": "Texas",
+                    "postalCode": "77346",
+                    "country": "United States",
+                    "prettyPrinted": "32644 South DEERCLIFF Junction, Katy, Texas 77346"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005175,
+                "bathrooms": 4.0,
+                "area": 4985,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home8.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-8.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 2652197,
+                "subType": null,
+                "subdivision": "Memorial Spgs Sec 04",
+                "cooling": null,
+                "heating": "Electric,Fireplace,Heat Pump,Wood",
+                "parking": 2,
+                "flooring": null,
+                "lotSize": "80X115",
+                "water": null,
+                "view": "None",
+                "construction": "In Kitchen,Stackable,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "SimplyRETS Trial Brokerage 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "21366 South Creek Mist Bluff #I-7",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77088",
+                    "country": "United States",
+                    "prettyPrinted": "21366 South Creek Mist Bluff, Cypress, Texas 77088"
+                },
+                "yearBuilt": null,
+                "bedrooms": 2,
+                "mlsId": 1005177,
+                "bathrooms": 5.5,
+                "area": 1452,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 13685168,
+                "subType": "Condominium",
+                "subdivision": "Rice Military",
+                "cooling": null,
+                "heating": "Forced Air 2 Zns or More,Heat Pump,Solar",
+                "parking": 3,
+                "flooring": null,
+                "lotSize": "76X   125",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Area,Dryer Included,Electric Dryer Hookup,In Garage,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "32904 East South Bayfront Junction #C 104",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77006",
+                    "country": "United States",
+                    "prettyPrinted": "32904 East South Bayfront Junction, Cypress, Texas 77006"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005179,
+                "bathrooms": 4.0,
+                "area": 2955,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 15838148,
+                "subType": null,
+                "subdivision": "Garden Oaks",
+                "cooling": null,
+                "heating": "Forced Air,Gas,Stove - Wood",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "71 X 130",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Dryer Included,Gas & Electric Dryer Hookup,Gas Dryer Hookup,In Garage,Washer Hookup,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "93796 East Heinlen Court Way #4059",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "93796 East Heinlen Court Way, Oak Ridge, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005180,
+                "bathrooms": 5.0,
+                "area": 1803,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-16.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 17510603,
+                "subType": "Townhouse",
+                "subdivision": "Sherwood Manor",
+                "cooling": null,
+                "heating": "Central Furnace,Natural Gas,Pellet,Wood,Wood Stove",
+                "parking": 2,
+                "flooring": null,
+                "lotSize": "120X75",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "None,Upstairs",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "39781 West Old Woman Springs Rd Drive #APT 2B",
+                    "city": "Katy",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "39781 West Old Woman Springs Rd Drive, Katy, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005181,
+                "bathrooms": 4.0,
+                "area": 1990,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 10114945,
+                "subType": "Condominium",
+                "subdivision": "Northpointe East",
+                "cooling": null,
+                "heating": "Forced Air,Gravity Heating,Propane,Solar,Fireplace",
+                "parking": 7,
+                "flooring": null,
+                "lotSize": "346X303",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Basement,Laundry Room",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "31045 South Maggiore Ln. Row #APT 2B",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "31045 South Maggiore Ln. Row, The Woodlands, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005183,
+                "bathrooms": 1.5,
+                "area": 1452,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 18879583,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Stable Gate Sec",
+                "cooling": null,
+                "heating": "Central,No Heat",
+                "parking": 3,
+                "flooring": null,
+                "lotSize": "76X   125",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "In Kitchen,Area,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "57691 West MAJESTY STREET Hts #3-1804",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77018",
+                    "country": "United States",
+                    "prettyPrinted": "57691 West MAJESTY STREET Hts, Oak Ridge, Texas 77018"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005185,
+                "bathrooms": 6.0,
+                "area": 2568,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-9.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 24925949,
+                "subType": null,
+                "subdivision": "Deer Run Estates Sec 1",
+                "cooling": null,
+                "heating": "Electric,Heat Pump 1st Lvl,Heat Pump 2nd Lvl,Other",
+                "parking": 9,
+                "flooring": null,
+                "lotSize": "106X163X106X158",
+                "water": null,
+                "view": "None",
+                "construction": "Laundry Chute,Laundry Room",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "SimplyRETS Trial Brokerage 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "84286 North Accors Ave. Creek #16-21",
+                    "city": "Tomball",
+                    "state": "Texas",
+                    "postalCode": "77532",
+                    "country": "United States",
+                    "prettyPrinted": "84286 North Accors Ave. Creek, Tomball, Texas 77532"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005186,
+                "bathrooms": 4.0,
+                "area": 4054,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-5.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 4894911,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Rice Military",
+                "cooling": null,
+                "heating": "Forced Air,Gravity Heating,Propane,Solar,Fireplace",
+                "parking": 8,
+                "flooring": null,
+                "lotSize": "115 X 113",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Gas Dryer Hookup,Stackable,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "13045 East Hedstrom Road Falls #Upper",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77070",
+                    "country": "United States",
+                    "prettyPrinted": "13045 East Hedstrom Road Falls, Oak Ridge, Texas 77070"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005187,
+                "bathrooms": 3.0,
+                "area": 2305,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-2.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 7987596,
+                "subType": "Condominium",
+                "subdivision": "Turtle Creek Sec 03",
+                "cooling": null,
+                "heating": "Central Gas, Zoned",
+                "parking": 8,
+                "flooring": null,
+                "lotSize": "50/143X70/163",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "None,Upstairs",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "172 North British Colony Boulevard #27",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77077",
+                    "country": "United States",
+                    "prettyPrinted": "172 North British Colony Boulevard, Oak Ridge, Texas 77077"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005189,
+                "bathrooms": 7.5,
+                "area": 2130,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home10.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-10.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 9014063,
+                "subType": null,
+                "subdivision": "Collegeview Sec 03",
+                "cooling": null,
+                "heating": "Central Furnace,Energy Star,High Efficiency,Fireplace,Humidity Control",
+                "parking": 1,
+                "flooring": null,
+                "lotSize": "83X99",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Gas Dryer Hookup,In Kitchen,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "21095 West Big Horn Court CT #Upper",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "21095 West Big Horn Court CT, Cypress, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005190,
+                "bathrooms": 6.5,
+                "area": 1990,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 4603355,
+                "subType": null,
+                "subdivision": "Falls at Dry Creek",
+                "cooling": null,
+                "heating": "Electric,Fireplace,Heat Pump,Wood",
+                "parking": 9,
+                "flooring": null,
+                "lotSize": "139.54 X 812.23 IRR",
+                "water": null,
+                "view": "None",
+                "construction": "Gas & Electric Dryer Hookup,Gas Dryer Hookup,Inside,Individual Room",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "86469 West Zenith Cliff #F16",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77007",
+                    "country": "United States",
+                    "prettyPrinted": "86469 West Zenith Cliff, Houston, Texas 77007"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005191,
+                "bathrooms": 6.0,
+                "area": 5269,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-15.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 20683471,
+                "subType": null,
+                "subdivision": "Stable Gate Sec",
+                "cooling": null,
+                "heating": "Electric,Forced Air 1 Zone,Perimeter",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "115 X 113",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Gas & Electric Dryer Hookup,In Kitchen,Individual Room",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "74434 East Sweet Bottom Br #18393",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77096",
+                    "country": "United States",
+                    "prettyPrinted": "74434 East Sweet Bottom Br, Houston, Texas 77096"
+                },
+                "yearBuilt": null,
+                "bedrooms": 2,
+                "mlsId": 1005192,
+                "bathrooms": 8.0,
+                "area": 1043,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-9.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 20714261,
+                "subType": null,
+                "subdivision": "Waterstone Springs",
+                "cooling": null,
+                "heating": "Radiant Heat",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "127X146",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "In Kitchen,Stackable,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "34149 East GRANICUS Mews #I-7",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77018",
+                    "country": "United States",
+                    "prettyPrinted": "34149 East GRANICUS Mews, Houston, Texas 77018"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005193,
+                "bathrooms": 3.0,
+                "area": 2955,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home14.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-14.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 7857291,
+                "subType": "Condominium",
+                "subdivision": "Gleannloch Farms",
+                "cooling": null,
+                "heating": "Electric,Heat Pump 1st Lvl,Heat Pump 2nd Lvl,Other",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "120X140",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Dryer Included,Individual Room,Washer Included,See Remarks",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "89810 East Running Doe Knoll #709S",
+                    "city": "Katy",
+                    "state": "Texas",
+                    "postalCode": "77006",
+                    "country": "United States",
+                    "prettyPrinted": "89810 East Running Doe Knoll, Katy, Texas 77006"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005194,
+                "bathrooms": 2.5,
+                "area": 2991,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-2.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 20764446,
+                "subType": "Townhouse",
+                "subdivision": "Barkley Square",
+                "cooling": null,
+                "heating": "Central Gas, Zoned",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "120X335",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Dryer Included,In Kitchen,Stackable,Electric Dryer Hookup,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "10915 South Bannister Way Garden #A",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77389",
+                    "country": "United States",
+                    "prettyPrinted": "10915 South Bannister Way Garden, Oak Ridge, Texas 77389"
+                },
+                "yearBuilt": null,
+                "bedrooms": 3,
+                "mlsId": 1005196,
+                "bathrooms": 5.5,
+                "area": 722,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-3.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 19237330,
+                "subType": null,
+                "subdivision": "Northpointe East",
+                "cooling": null,
+                "heating": "Fuel - Gas Natural,Heat Pump,Radiant / Ceiling",
+                "parking": 1,
+                "flooring": null,
+                "lotSize": "60X80",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Washer Included,Area,Dryer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "15804 South FM 3 Boulevard #1795",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77429",
+                    "country": "United States",
+                    "prettyPrinted": "15804 South FM 3 Boulevard, Houston, Texas 77429"
+                },
+                "yearBuilt": null,
+                "bedrooms": 3,
+                "mlsId": 1005199,
+                "bathrooms": 1.5,
+                "area": 5607,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home6.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-6.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 20220909,
+                "subType": "Condominium",
+                "subdivision": "Montrose",
+                "cooling": null,
+                "heating": "Electric,Heat Pump 1st Lvl,Heat Pump 2nd Lvl,Other",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "40X118",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Main Floor,Closet",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "12763 South 33 STREET Trce #APT 2B",
+                    "city": "Tomball",
+                    "state": "Texas",
+                    "postalCode": "77024",
+                    "country": "United States",
+                    "prettyPrinted": "12763 South 33 STREET Trce, Tomball, Texas 77024"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005200,
+                "bathrooms": 7.5,
+                "area": 240,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home13.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-13.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 7633393,
+                "subType": null,
+                "subdivision": "Park Place",
+                "cooling": null,
+                "heating": "Electric,Heat Pump 1st Lvl,Heat Pump 2nd Lvl,Other",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "48X169",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Community,Gas & Electric Dryer Hookup,Inside,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "78071 East MARQUINA DE AVILA Rise #4059",
+                    "city": "Tomball",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "78071 East MARQUINA DE AVILA Rise, Tomball, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005203,
+                "bathrooms": 4.5,
+                "area": 651,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home6.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-6.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 2400238,
+                "subType": null,
+                "subdivision": "Colony Creek Village Sec 02",
+                "cooling": null,
+                "heating": "Electric,Other (Use Remarks),Heat Pump",
+                "parking": 9,
+                "flooring": null,
+                "lotSize": "48X169",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Laundry Chute,Laundry Room",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "19078 North EFFIE Mall #2605",
+                    "city": "Tomball",
+                    "state": "Texas",
+                    "postalCode": "77070",
+                    "country": "United States",
+                    "prettyPrinted": "19078 North EFFIE Mall, Tomball, Texas 77070"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005204,
+                "bathrooms": 7.0,
+                "area": 2991,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-15.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 3769504,
+                "subType": null,
+                "subdivision": "Hambledon Sec 03 Amd",
+                "cooling": null,
+                "heating": "Electric,Heat Pump,Propane",
+                "parking": 1,
+                "flooring": null,
+                "lotSize": "80X128",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Gas & Electric Dryer Hookup,In Closet,Inside,On Upper Level,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "30662 South Perry Hill Falls #205-C",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "30662 South Perry Hill Falls, Cypress, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005205,
+                "bathrooms": 3.5,
+                "area": 3363,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-5.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 20128158,
+                "subType": null,
+                "subdivision": "Memorial Meadows",
+                "cooling": null,
+                "heating": "Dual System,Forced Air",
+                "parking": 1,
+                "flooring": null,
+                "lotSize": "50 X 160",
+                "water": null,
+                "view": "None",
+                "construction": "Basement,Laundry Room",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "39071 West HIGHLAND AVE Forge #205-C",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "39071 West HIGHLAND AVE Forge, Cypress, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005207,
+                "bathrooms": 7.0,
+                "area": 1452,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-5.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 4005198,
+                "subType": null,
+                "subdivision": "Oakcrest North Sec 03",
+                "cooling": null,
+                "heating": "Forced Air,Radiator(s),Zoned",
+                "parking": 1,
+                "flooring": null,
+                "lotSize": "72X140X79X107",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Gas & Electric Dryer Hookup,Gas Dryer Hookup,Individual Room,Inside,On Upper Level,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "63336 East EVERETT PL Mews #E-1002",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77073",
+                    "country": "United States",
+                    "prettyPrinted": "63336 East EVERETT PL Mews, Oak Ridge, Texas 77073"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005211,
+                "bathrooms": 8.5,
+                "area": 987,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 16194569,
+                "subType": "Condominium",
+                "subdivision": "Towne Lake",
+                "cooling": null,
+                "heating": "Electric,Heat Pump,See Remarks",
+                "parking": 9,
+                "flooring": null,
+                "lotSize": "145 X 160",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Area,Inside,Stackable",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "SimplyRETS Trial Brokerage 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "68385 North Giaramita Row #6A2",
+                    "city": "Katy",
+                    "state": "Texas",
+                    "postalCode": "77004",
+                    "country": "United States",
+                    "prettyPrinted": "68385 North Giaramita Row, Katy, Texas 77004"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005212,
+                "bathrooms": 6.0,
+                "area": 2840,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-16.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 9243871,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Glen Arbor Sec 07",
+                "cooling": null,
+                "heating": "Electric,Heat Pump,Propane",
+                "parking": 5,
+                "flooring": null,
+                "lotSize": "120X75",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Laundry Chute,Laundry Room",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "18985 West Perry Hill Trce #1302-D",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77429",
+                    "country": "United States",
+                    "prettyPrinted": "18985 West Perry Hill Trce, Oak Ridge, Texas 77429"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005213,
+                "bathrooms": 6.0,
+                "area": 2991,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home8.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-8.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 14218255,
+                "subType": "Condominium",
+                "subdivision": "Deer Run Estates Sec 1",
+                "cooling": null,
+                "heating": "Central Forced Air,Forced Air,Heating - 2+ Units",
+                "parking": 8,
+                "flooring": null,
+                "lotSize": "48X169",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Washer,Washer/Dryer",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "14463 West 8710 GLEN ARBOR RD Trace #Upper",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "14463 West 8710 GLEN ARBOR RD Trace, Cypress, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005214,
+                "bathrooms": 6.5,
+                "area": 3449,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-9.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 13564260,
+                "subType": "Condominium",
+                "subdivision": "Friendswood Cove",
+                "cooling": null,
+                "heating": "Forced Air,Gas,Stove - Wood",
+                "parking": 7,
+                "flooring": null,
+                "lotSize": "108/21X121/153",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Dryer Included,Individual Room,Washer Included,See Remarks",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "55679 East Puette Link #27536",
+                    "city": "Tomball",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "55679 East Puette Link, Tomball, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005215,
+                "bathrooms": 6.0,
+                "area": 1648,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-15.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 6054541,
+                "subType": null,
+                "subdivision": "OAK FOREST",
+                "cooling": null,
+                "heating": "Central Furnace,Propane,High Efficiency,Fireplace",
+                "parking": 7,
+                "flooring": null,
+                "lotSize": "74'X99'X77'X99'",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Area,Electric Dryer Hookup,In Carport,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "32738 South VISTA MADERA Lane #F16",
+                    "city": "Tomball",
+                    "state": "Texas",
+                    "postalCode": "77024",
+                    "country": "United States",
+                    "prettyPrinted": "32738 South VISTA MADERA Lane, Tomball, Texas 77024"
+                },
+                "yearBuilt": null,
+                "bedrooms": 2,
+                "mlsId": 1005216,
+                "bathrooms": 9.0,
+                "area": 1562,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-5.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 2893021,
+                "subType": "Townhouse",
+                "subdivision": "Waters Edge",
+                "cooling": null,
+                "heating": "Radiant Heat",
+                "parking": 4,
+                "flooring": null,
+                "lotSize": "500X 100",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Gas & Electric Dryer Hookup,In Closet,Individual Room,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "89419 North US HWY. 301 Pl #527-2",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77449",
+                    "country": "United States",
+                    "prettyPrinted": "89419 North US HWY. 301 Pl, Oak Ridge, Texas 77449"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005218,
+                "bathrooms": 9.0,
+                "area": 3363,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home11.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-11.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 21854919,
+                "subType": "Condominium",
+                "subdivision": "Kings River Village",
+                "cooling": null,
+                "heating": "Central Furnace,Heat Pump,Propane,Fireplace",
+                "parking": 4,
+                "flooring": null,
+                "lotSize": "120X75",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Gas & Electric Dryer Hookup,Electric Dryer Hookup,In Garage,See Remarks",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "91910 East Somerset N. Knolls #783",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77008",
+                    "country": "United States",
+                    "prettyPrinted": "91910 East Somerset N. Knolls, Houston, Texas 77008"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005219,
+                "bathrooms": 8.0,
+                "area": 3363,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home12.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-12.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 13717919,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Briargrove Park Sec 01",
+                "cooling": null,
+                "heating": "Central Furnace,Heat Pump,Propane,Fireplace",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "100X194",
+                "water": null,
+                "view": "None",
+                "construction": "Area,Gas & Electric Dryer Hookup,Individual Room,Inside,Laundry Chute,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "78094 West ARABIAN WAY Cliff #1302-D",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77007",
+                    "country": "United States",
+                    "prettyPrinted": "78094 West ARABIAN WAY Cliff, Cypress, Texas 77007"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005220,
+                "bathrooms": 6.5,
+                "area": 5626,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-15.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 9390388,
+                "subType": "Condominium",
+                "subdivision": "Park Place",
+                "cooling": null,
+                "heating": "Electric,Other (Use Remarks),Heat Pump",
+                "parking": 1,
+                "flooring": null,
+                "lotSize": "56X156X53X164",
+                "water": null,
+                "view": "None",
+                "construction": "Washer Included,In Carport",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "8369 West MAJESTY STREET Path #1765",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77379",
+                    "country": "United States",
+                    "prettyPrinted": "8369 West MAJESTY STREET Path, Oak Ridge, Texas 77379"
+                },
+                "yearBuilt": null,
+                "bedrooms": 3,
+                "mlsId": 1005221,
+                "bathrooms": 6.5,
+                "area": 5607,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-15.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 9375751,
+                "subType": null,
+                "subdivision": "Towne Lake",
+                "cooling": null,
+                "heating": "Electric,Heat Pump,See Remarks",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "75X   100",
+                "water": null,
+                "view": "None",
+                "construction": "Gas & Electric Dryer Hookup,Electric Dryer Hookup,In Garage,See Remarks",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "76520 North MAXEY HILL Boulevard #1795",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77024",
+                    "country": "United States",
+                    "prettyPrinted": "76520 North MAXEY HILL Boulevard, The Woodlands, Texas 77024"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005222,
+                "bathrooms": 1.5,
+                "area": 5607,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-9.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 9878825,
+                "subType": "Townhouse",
+                "subdivision": "NORCHESTER",
+                "cooling": null,
+                "heating": "Central Forced Air,Central Forced Air - Gas,Gas,Heating - 2+ Units,Heating - 2+ Zones",
+                "parking": 3,
+                "flooring": null,
+                "lotSize": "120X75",
+                "water": null,
+                "view": "None",
+                "construction": "In Kitchen,Area,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "65991 North THE PASEO Fwy #S5",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "65991 North THE PASEO Fwy, Oak Ridge, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 3,
+                "mlsId": 1005227,
+                "bathrooms": 7.0,
+                "area": 10100,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-15.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 419294,
+                "subType": null,
+                "subdivision": "Collegeview Sec 03",
+                "cooling": null,
+                "heating": "Central Furnace,Natural Gas,Pellet,Wood,Wood Stove",
+                "parking": 1,
+                "flooring": null,
+                "lotSize": "123 X 59.55",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Dryer Included,In Garage,Propane Dryer Hookup,Washer Hookup,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "92270 South 2991 Bryant ST Pl #1573",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77043",
+                    "country": "United States",
+                    "prettyPrinted": "92270 South 2991 Bryant ST Pl, Houston, Texas 77043"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005229,
+                "bathrooms": 5.0,
+                "area": 1562,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 80658,
+                "subType": "Condominium",
+                "subdivision": "Cypress Point Sec 01",
+                "cooling": null,
+                "heating": "Wood,Fireplace,See Remarks",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "120X195",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "In Closet,Gas Dryer Hookup,Washer Included,Stackable",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "59603 West Zuelke Forge #I-7",
+                    "city": "Katy",
+                    "state": "Texas",
+                    "postalCode": "77007",
+                    "country": "United States",
+                    "prettyPrinted": "59603 West Zuelke Forge, Katy, Texas 77007"
+                },
+                "yearBuilt": null,
+                "bedrooms": 3,
+                "mlsId": 1005230,
+                "bathrooms": 6.0,
+                "area": 2607,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 16438971,
+                "subType": null,
+                "subdivision": "Towne Lake",
+                "cooling": null,
+                "heating": "Forced Air 90+,Geothermal,Zoned,Other",
+                "parking": 3,
+                "flooring": null,
+                "lotSize": "85.8 X 153.6 I",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Gas & Electric Dryer Hookup,In Closet,Inside,On Upper Level,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Properties"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "22690 West Hunters Hollow Garden #LPH-1",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77095",
+                    "country": "United States",
+                    "prettyPrinted": "22690 West Hunters Hollow Garden, Oak Ridge, Texas 77095"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005231,
+                "bathrooms": 4.5,
+                "area": 722,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home8.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-8.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 9199166,
+                "subType": "Townhouse",
+                "subdivision": "Torrey Pines Sec 01",
+                "cooling": null,
+                "heating": "Electric,Kerosene",
+                "parking": 1,
+                "flooring": null,
+                "lotSize": "35X163",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Gas Dryer Hookup,In Closet,Individual Room,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "49764 West ORRINGTON PAYNE Mews #783",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77546",
+                    "country": "United States",
+                    "prettyPrinted": "49764 West ORRINGTON PAYNE Mews, The Woodlands, Texas 77546"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005233,
+                "bathrooms": 4.0,
+                "area": 5515,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-2.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 23662354,
+                "subType": null,
+                "subdivision": "Kings River Village",
+                "cooling": null,
+                "heating": "Central Furnace,Energy Star,High Efficiency,Fireplace,Humidity Control",
+                "parking": 4,
+                "flooring": null,
+                "lotSize": "85.8 X 153.6 I",
+                "water": null,
+                "view": "None",
+                "construction": "In Garage,Electric Dryer Hookup,Washer Included,Propane Dryer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "81545 East PLUMAS CT Trace #7610",
+                    "city": "Tomball",
+                    "state": "Texas",
+                    "postalCode": "77095",
+                    "country": "United States",
+                    "prettyPrinted": "81545 East PLUMAS CT Trace, Tomball, Texas 77095"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005235,
+                "bathrooms": 6.5,
+                "area": 4985,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 21944509,
+                "subType": null,
+                "subdivision": "Garden Oaks",
+                "cooling": null,
+                "heating": "Central Furnace,Heat Pump,Propane,Fireplace",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "106X163X106X158",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Community,None",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "70490 North FAIRHAVEN PL Creek #13906",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77008",
+                    "country": "United States",
+                    "prettyPrinted": "70490 North FAIRHAVEN PL Creek, Houston, Texas 77008"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005236,
+                "bathrooms": 4.0,
+                "area": 3498,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home10.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-10.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 8958673,
+                "subType": null,
+                "subdivision": "Collegeview Sec 03",
+                "cooling": null,
+                "heating": "Central,Fuel - Gas Natural,Heat Pump",
+                "parking": 8,
+                "flooring": null,
+                "lotSize": "80X115",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Coin Operated,Community Facility,Other",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "26532 North 240 Old River LN Fwy #Upper",
+                    "city": "Katy",
+                    "state": "Texas",
+                    "postalCode": "77068",
+                    "country": "United States",
+                    "prettyPrinted": "26532 North 240 Old River LN Fwy, Katy, Texas 77068"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005237,
+                "bathrooms": 3.0,
+                "area": 3261,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-16.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 14008098,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Glen Arbor Sec 07",
+                "cooling": null,
+                "heating": "Gas,Electric,Propane,Forced Air",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "127X146",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Gas & Electric Dryer Hookup,Electric Dryer Hookup,In Garage,See Remarks",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "2976 North British Colony Lndg #12306",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77377",
+                    "country": "United States",
+                    "prettyPrinted": "2976 North British Colony Lndg, Houston, Texas 77377"
+                },
+                "yearBuilt": null,
+                "bedrooms": 3,
+                "mlsId": 1005240,
+                "bathrooms": 7.0,
+                "area": 4553,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 17236623,
+                "subType": "Townhouse",
+                "subdivision": "PADDOCK",
+                "cooling": null,
+                "heating": "Forced Air,Gas,Stove - Wood",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "85' X 228'",
+                "water": null,
+                "view": "None",
+                "construction": "Stackable,Washer Included,Dryer Included,Inside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "28698 West Viewlake Knolls #2930",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77055",
+                    "country": "United States",
+                    "prettyPrinted": "28698 West Viewlake Knolls, Oak Ridge, Texas 77055"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005241,
+                "bathrooms": 6.0,
+                "area": 2991,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home11.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-11.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 2190359,
+                "subType": "Townhouse",
+                "subdivision": "White Oak Springs",
+                "cooling": null,
+                "heating": "Central Forced Air - Gas,Heating - 2+ Units",
+                "parking": 7,
+                "flooring": null,
+                "lotSize": "76X   125",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Dryer Included,Gas & Electric Dryer Hookup,In Closet,Inside,Stackable,Washer Hookup,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "SimplyRETS Trial Brokerage 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "54709 South Bannister Way Hts #138",
+                    "city": "The Woodlands",
+                    "state": "Texas",
+                    "postalCode": "77433",
+                    "country": "United States",
+                    "prettyPrinted": "54709 South Bannister Way Hts, The Woodlands, Texas 77433"
+                },
+                "yearBuilt": null,
+                "bedrooms": 6,
+                "mlsId": 1005242,
+                "bathrooms": 3.5,
+                "area": 240,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home6.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-6.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 17592003,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Cottage Grove",
+                "cooling": null,
+                "heating": "Gas,Radiant,Space Heater",
+                "parking": 7,
+                "flooring": null,
+                "lotSize": "X1957",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Area,Inside,Laundry Chute,See Remarks,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "11416 North Tiger Horse Extension #783",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77007",
+                    "country": "United States",
+                    "prettyPrinted": "11416 North Tiger Horse Extension, Cypress, Texas 77007"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005243,
+                "bathrooms": 7.0,
+                "area": 2991,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-3.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 24266835,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "North Kingwood Forest",
+                "cooling": null,
+                "heating": "Central Forced Air,Central Forced Air - Gas,Gas,Heating - 2+ Units,Heating - 2+ Zones",
+                "parking": 9,
+                "flooring": null,
+                "lotSize": "790X150",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Area,Electric Dryer Hookup,In Carport,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "SimplyRETS Trial Brokerage 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "23813 East Rush Creek Way Estates #16-21",
+                    "city": "Katy",
+                    "state": "Texas",
+                    "postalCode": "77096",
+                    "country": "United States",
+                    "prettyPrinted": "23813 East Rush Creek Way Estates, Katy, Texas 77096"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005244,
+                "bathrooms": 2.5,
+                "area": 2472,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-2.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 13809040,
+                "subType": "Condominium",
+                "subdivision": "PADDOCK",
+                "cooling": null,
+                "heating": "Central Furnace,Solar,Radiant",
+                "parking": 8,
+                "flooring": null,
+                "lotSize": "346X303",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Gas & Electric Dryer Hookup,In Closet,Gas Dryer Hookup,Electric Dryer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "52876 North Newark Blvd B Trace #2035",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77429",
+                    "country": "United States",
+                    "prettyPrinted": "52876 North Newark Blvd B Trace, Houston, Texas 77429"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005245,
+                "bathrooms": 7.5,
+                "area": 3534,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-7.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 18065342,
+                "subType": "Townhouse",
+                "subdivision": "Kings River Village",
+                "cooling": null,
+                "heating": "Central,No Heat",
+                "parking": 9,
+                "flooring": null,
+                "lotSize": "346X303",
+                "water": null,
+                "view": "Golf Course",
+                "construction": "Area,Dryer Included,Electric Dryer Hookup,Individual Room,Inside,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "20349 North LOST SPRING Fwy #27536",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77014",
+                    "country": "United States",
+                    "prettyPrinted": "20349 North LOST SPRING Fwy, Oak Ridge, Texas 77014"
+                },
+                "yearBuilt": null,
+                "bedrooms": 2,
+                "mlsId": 1005246,
+                "bathrooms": 1.5,
+                "area": 2130,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-16.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 1066737,
+                "subType": "Townhouse",
+                "subdivision": "Glen Arbor Sec 07",
+                "cooling": null,
+                "heating": "Central Forced Air,Forced Air,Heating - 2+ Units",
+                "parking": 4,
+                "flooring": null,
+                "lotSize": "97 X67 X 126 X 130",
+                "water": null,
+                "view": "None",
+                "construction": "Gas & Electric Dryer Hookup,Gas Dryer Hookup,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Acme Brokerage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "90678 South VELLUM Extension #6A2",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77429",
+                    "country": "United States",
+                    "prettyPrinted": "90678 South VELLUM Extension, Cypress, Texas 77429"
+                },
+                "yearBuilt": null,
+                "bedrooms": 5,
+                "mlsId": 1005252,
+                "bathrooms": 5.0,
+                "area": 1990,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-5.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 12104869,
+                "subType": null,
+                "subdivision": "MDC DevelopmentLLC Sub.",
+                "cooling": null,
+                "heating": "Forced Air,Electric,Natural Gas,Wood,Fireplace",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "X1957",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "In Kitchen,Stackable,Washer Included",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "1824 North EFFIE Circle #PH-G",
+                    "city": "Cypress",
+                    "state": "Texas",
+                    "postalCode": "77004",
+                    "country": "United States",
+                    "prettyPrinted": "1824 North EFFIE Circle, Cypress, Texas 77004"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005253,
+                "bathrooms": 6.5,
+                "area": 8308,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-5.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 16742578,
+                "subType": "SingleFamilyResidence",
+                "subdivision": "Vineyard Mdw Sec 01",
+                "cooling": null,
+                "heating": "Fuel - Gas Natural,Heat Pump,Radiant / Ceiling",
+                "parking": 8,
+                "flooring": null,
+                "lotSize": "120X195",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Area,Gas Dryer Hookup,Individual Room,Inside,Outside",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Houston Real Estate"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "60843 South GAITHER WAY CT #18393",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77532",
+                    "country": "United States",
+                    "prettyPrinted": "60843 South GAITHER WAY CT, Houston, Texas 77532"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005254,
+                "bathrooms": 4.5,
+                "area": 1623,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 22790088,
+                "subType": "Condominium",
+                "subdivision": "Terranova West Sec 03",
+                "cooling": null,
+                "heating": "Forced Air,Furnace,Oil,Pellet",
+                "parking": 0,
+                "flooring": null,
+                "lotSize": "106X163X106X158",
+                "water": null,
+                "view": "Hills,Neighborhood,Trees/Woods",
+                "construction": "Propane Dryer Hookup,Area",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "36992 West Georgetown(lot 18) Boulevard #C 104",
+                    "city": "Houston",
+                    "state": "Texas",
+                    "postalCode": "77429",
+                    "country": "United States",
+                    "prettyPrinted": "36992 West Georgetown(lot 18) Boulevard, Houston, Texas 77429"
+                },
+                "yearBuilt": null,
+                "bedrooms": 4,
+                "mlsId": 1005255,
+                "bathrooms": 6.5,
+                "area": 1562,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home14.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-14.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 6070556,
+                "subType": "Condominium",
+                "subdivision": "Towne Lake",
+                "cooling": null,
+                "heating": "Gas Pac,Heat Pump 2nd Lvl,Split System",
+                "parking": 9,
+                "flooring": null,
+                "lotSize": "40X118",
+                "water": null,
+                "view": "Neighborhood",
+                "construction": "Area,Gas & Electric Dryer Hookup,Individual Room,Inside,Laundry Chute,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Keller Williams Greater Houston"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "18652 East CALLE SOL Row #527-2",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77389",
+                    "country": "United States",
+                    "prettyPrinted": "18652 East CALLE SOL Row, Oak Ridge, Texas 77389"
+                },
+                "yearBuilt": null,
+                "bedrooms": 3,
+                "mlsId": 1005256,
+                "bathrooms": 3.5,
+                "area": 5415,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-16.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 17997931,
+                "subType": "Townhouse",
+                "subdivision": "Waters Edge",
+                "cooling": null,
+                "heating": "Forced Air 90+,Geothermal,Zoned,Other",
+                "parking": 6,
+                "flooring": null,
+                "lotSize": "74'X99'X77'X99'",
+                "water": null,
+                "view": "None",
+                "construction": "Area,Gas & Electric Dryer Hookup,Individual Room,Inside,Laundry Chute,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "SimplyRETS Trial Brokerage 1"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": {
+                    "street": "17293 West SR 135 N Trce #B65",
+                    "city": "Oak Ridge",
+                    "state": "Texas",
+                    "postalCode": "77346",
+                    "country": "United States",
+                    "prettyPrinted": "17293 West SR 135 N Trce, Oak Ridge, Texas 77346"
+                },
+                "yearBuilt": null,
+                "bedrooms": 1,
+                "mlsId": 1005257,
+                "bathrooms": 7.0,
+                "area": 2671,
+                "featuredImage": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg",
+                "otherImages": [
+                    "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-3.jpg"
+                ],
+                "agentName": null,
+                "agentCompany": null,
+                "listPrice": 13702614,
+                "subType": null,
+                "subdivision": "Parkway Terrace",
+                "cooling": null,
+                "heating": "Central Gas,Space Heater",
+                "parking": 9,
+                "flooring": null,
+                "lotSize": "41X121",
+                "water": null,
+                "view": "None",
+                "construction": "Area,Gas & Electric Dryer Hookup,Individual Room,Inside,Laundry Chute,Washer Hookup",
+                "virtualTourUrl": null,
+                "remarks": "This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "salesAgentName": "Test Agent",
+                "salesOfficeName": "Trial Realty, Inc"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    null,
+                    null
+                ]
+            }
+        }
+    ]
+}

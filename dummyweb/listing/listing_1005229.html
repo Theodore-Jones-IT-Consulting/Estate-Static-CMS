@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+EstateStatic CMS Code License 
+
+Copyright 2024 Blueprint Cyber Solutions LLC, DBA Theodore Jones Information Technology Consulting
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
+associated documentation files (the “Software”), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to 
+the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial 
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+         crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""></script>
+    <style>
+ :root {
+    /* Brand colors */
+    --primary-color: #007bff; /* Example blue color */
+    --accent-color: #d9534f; /* Example red color */
+    --background-color: #f7f7f7;
+    --text-color: #333;
+    --link-color: #007bff;
+    --link-hover-color: #f0f0f0;
+    --footer-background-color: #333;
+    --footer-text-color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    color: var(--text-color);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav.menu {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.menu a {
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav.menu a:hover, nav.menu a.active {
+    color: var(--accent-color);
+}
+
+.content {
+    padding: 2rem;
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer.footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .contact-info, .top-bar .social-media {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .contact-info a, .top-bar .social-media a {
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.top-bar .contact-info a:hover, .top-bar .social-media a:hover {
+    color: var(--accent-color);
+}
+
+.top-bar i {
+    margin-right: 5px;
+}
+
+.listing-navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.listing-navigation a {
+    text-decoration: none;
+    color: var(--link-color);
+    margin: 0 10px;
+}
+
+.listing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.listing-row {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.listing-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.listing-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.listing-info .price {
+    font-size: 1rem;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.listing-link a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.pagination {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagination a, .pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    color: var(--link-color);
+}
+
+.pagination a:hover {
+    background-color: var(--link-hover-color);
+}
+
+.pagination span {
+    background-color: var(--link-color);
+    color: white;
+}
+
+#hero-section {
+    position: relative;
+    width: 100%;
+    display: none; /* Hidden by default */
+}
+
+#hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+}
+
+h2, h3 {
+    color: #555;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.feature-section {
+    background: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel-main {
+    text-align: center;
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-main img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: none;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.carousel-control.left {
+    left: 10px;
+}
+
+.carousel-control.right {
+    right: 10px;
+}
+
+.carousel-preview {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.carousel-preview img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.carousel-preview img.active {
+    opacity: 1;
+}
+
+/* Testimonials Page Styles */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    text-align: right;
+    color: #007bff;
+}
+
+@media (max-width: 999px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Unique Listings Section */
+.re-listings-section {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.re-listings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.re-listing-item {
+    margin: 15px;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.re-listing-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.re-listing-item p {
+    margin: 10px 0;
+}
+
+.re-listing-price {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <a href="mailto:contact@realestatecompany.com"><i class="fas fa-envelope"></i> contact@realestatecompany.com</a>
+            <a href="tel:123-456-7890"><i class="fas fa-phone"></i> 123-456-7890</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/your_facebook_profile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/your_twitter_profile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/your_linkedin_profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <header>
+        <h1>Real Estate Company</h1>
+    </header>
+    <nav class="menu">
+        <a href="/">Home</a>
+        <a href="/our_team.html">Our Team</a>
+        <a href="/our_services.html">Services</a>
+        <a href="/testimonials.html">Testimonials</a>
+        <a href="/map.html">Search Homes</a>
+        <a href="/listings">Listings In Our Area</a>
+    </nav>
+    <div class="content">
+        <article id="real-estate-listing">
+    <header>
+        <h1>92270 South 2991 Bryant ST Pl, Houston, Texas 77043</h1>
+        <p class="price">$80,658</p>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section id="image-gallery">
+        <div class="carousel-container">
+            <div class="carousel-main">
+                <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg" alt="Image of property">
+<img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg" alt="Image of property"> <!-- This will be replaced with individual <img> elements -->
+            </div>
+            <div class="carousel-preview">
+            </div>
+        </div>
+    </section>
+
+    <section id="listing-description">
+        <h2>Property Description</h2>
+        <p>This property is a trial property to test the SimplyRETS. This field will include remarks or descriptions from your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section id="features-amenities">
+        <h2>Features and Amenities</h2>
+        <div class="features-grid">
+            <div class="feature-section interior"><div class="Bedrooms">
+    <p><strong>Bedrooms:</strong> 1</p>
+</div>
+<div class="Bathrooms">
+    <p><strong>Bathrooms:</strong> 5.0</p>
+</div>
+<div class="Area">
+    <p><strong>Area:</strong> 1562 sqft</p>
+</div>
+<div class="Flooring">
+</div>
+<div class="Year Built">
+</div>
+<div class="Cooling">
+</div>
+<div class="Heating">
+    <p><strong>Heating:</strong> Wood,Fireplace,See Remarks</p>
+</div>
+</div>
+            <div class="feature-section exterior"><div class="View">
+    <p><strong>View:</strong> Neighborhood</p>
+</div>
+<div class="Water">
+</div>
+<div class="Construction">
+    <p><strong>Construction:</strong> In Closet,Gas Dryer Hookup,Washer Included,Stackable</p>
+</div>
+ <div class="Lot Size">
+    <p><strong>Lot Size:</strong> 120X195</p>
+</div>
+ </div>
+            <div class="feature-section area-lot"><div class="List Price">
+    <p><strong>List Price:</strong> $80,658</p>
+</div>
+<div class="Sub Type">
+    <p><strong>Sub Type:</strong> Condominium</p>
+</div>
+<div class="Subdivision">
+    <p><strong>Subdivision:</strong> Cypress Point Sec 01</p>
+</div>
+<div class="Parking">
+</div>
+</div>
+        </div>
+    </section>
+
+    <section>
+        <div><p align="center"><a href="https://www.mortgagecalculator.org/"><img src="https://www.mortgagecalculator.org/images/mortgage-calculator-logo.png" width="589" height="57" alt="MortgageCalculator.org" border="0" style="max-width: 100%;" target="_blank"></a></p> <iframe src="https://www.mortgagecalculator.org/webmasters/?downpayment=50000&homevalue=300000&loanamount=250000&interestrate=4&loanterm=30&propertytax=2400&pmi=1&homeinsurance=1000&monthlyhoa=0" style="width: 100%; height: 1200px; border: 0;"></iframe>
+            <div style="font-family: Arial; height: 36px; top: -36px; padding: 0 8px 0 0; box-sizing: border-box; text-align: right; background: #f6f9f9; border: 1px solid #ccc; color: #868686; line-height: 34px; font-size: 12px; position: relative;"> <a style="color: #868686;" href="https://www.mortgagecalculator.org/free-tools/javascript-mortgage-calculator.php" target="_blank">Javascript Mortgage Calculator</a> by MortgageCalculator.org</div>
+          </div>        
+    </section>
+
+    <section id="mls-attribution-section">
+        <p>Data provided by <strong>FakeMLS Data Services</strong></p>
+<p>Listing information last updated on <strong>2024-01-15</strong></p>
+
+    </section>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var mainImageContainer = document.querySelector('.carousel-main');
+    var previewContainer = document.querySelector('.carousel-preview');
+    var images = mainImageContainer.querySelectorAll('img');
+    var activeImageIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.style.display = i === index ? 'block' : 'none';
+        });
+        activeImageIndex = index;
+        updateActivePreview();
+    }
+
+    function updateActivePreview() {
+        var previews = previewContainer.querySelectorAll('img');
+        previews.forEach((preview, index) => {
+            preview.classList.toggle('active', index === activeImageIndex);
+        });
+    }
+
+    // Create and append preview images
+    images.forEach((img, index) => {
+        var previewImg = img.cloneNode();
+        previewImg.onclick = () => showImage(index);
+        previewContainer.appendChild(previewImg);
+    });
+
+    // Initialize carousel by showing the first image
+    showImage(0);
+
+    // Add navigation arrows if more than one image
+    if (images.length > 1) {
+        var leftArrow = document.createElement('a');
+        var rightArrow = document.createElement('a');
+        leftArrow.innerHTML = '&#10094;';
+        rightArrow.innerHTML = '&#10095;';
+        leftArrow.classList.add('carousel-control', 'left');
+        rightArrow.classList.add('carousel-control', 'right');
+
+        leftArrow.onclick = () => showImage((activeImageIndex + images.length - 1) % images.length);
+        rightArrow.onclick = () => showImage((activeImageIndex + 1) % images.length);
+
+        mainImageContainer.appendChild(leftArrow);
+        mainImageContainer.appendChild(rightArrow);
+    } else {
+        previewContainer.style.display = 'none'; // Hide previews if only one image
+    }
+});
+
+</script>
+
+    </div>
+    <footer class="footer">
+        <p>
+            <i class="fas fa-phone"></i> Phone: 123-456-7890 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> Email: contact@realestatecompany.com
+        </p>
+        <p>
+            &copy; 2024 Real Estate Company. All rights reserved.
+        </p>
+        <p>
+            <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms and Conditions</a>
+        </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuLinks = document.querySelectorAll('nav.menu a');
+            var currentUrl = window.location.pathname;
+    
+            menuLinks.forEach(function(link) {
+                if (link.getAttribute('href') === currentUrl) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

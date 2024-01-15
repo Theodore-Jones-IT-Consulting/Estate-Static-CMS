@@ -1,0 +1,36 @@
+<!-- Demo Page Header -->
+<h1>Demo Page</h1>
+
+<!-- Shortcode Script Explanation -->
+<h2>Shortcode Script Usage</h2>
+<p>
+    This section demonstrates the use of a shortcode script. The shortcode <code>&#91;script:greeting name=Jane&#93;</code>
+    calls the 'greeting.py' script located in the 'scripts' subfolder. It passes the parameter 'name' with the
+    value 'Jane' to the script. The script returns a greeting message, which is then dynamically inserted here.
+</p>
+<!-- Shortcode Script Usage Example -->
+<div>
+    [script:greeting name=Jane]
+</div>
+
+<!-- Inline Python Script Explanation -->
+<h2>Inline Python Script Usage</h2>
+<p>
+    Below is an inline Python script. The enclosed Python code between special tags is executed by the page generator.
+    In this example, the script gets the current time and outputs it. The script's output replaces this entire block
+    in the generated HTML, displaying the current time.
+</p>
+<!-- Inline Python Script Usage Example -->
+<div>
+    <!--python
+from datetime import datetime
+
+def get_current_time():
+    return datetime.datetime.now().strftime("%H:%M:%S")
+
+# Generate current time and print it
+print(f"<p>Current time: {get_current_time()}</p>")
+python-->
+</div>
+
+

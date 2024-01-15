@@ -1,0 +1,20 @@
+<!-- agents.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... -->
+</head>
+<body>
+    <h1>Agents</h1>
+    <ul>
+        {% for agent in agents %}
+        <li>
+        {{ agent.name }} - {{ agent.title }}
+        <a href="{{ url_for('edit_agent', agent_index=loop.index0) }}">Edit</a>
+        </li>
+        {% endfor %}
+        </ul>
+        <a href="{{ url_for('add_agent') }}">Add New Agent</a>
+        
+</body>
+</html>

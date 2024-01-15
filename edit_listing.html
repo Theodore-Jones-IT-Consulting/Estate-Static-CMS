@@ -1,0 +1,23 @@
+<!-- edit_listing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... -->
+</head>
+<body>
+    <h1>Edit Listing</h1>
+    <form method="post">
+        <!-- ... other listing fields ... -->
+        <label for="agent">Agent:</label>
+        <select id="agent" name="agent">
+            {% for agent in agents %}
+            <option value="{{ loop.index0 }}" {% if listing.agent and listing.agent.name == agent.name %}selected{% endif %}>
+                {{ agent.name }}
+            </option>
+            {% endfor %}
+        </select><br>
+
+        <button type="submit">Update Listing</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<article id="real-estate-listing">
+    <header>
+        <h1>${address}</h1>
+        <p class="price">${listPrice}</p>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section id="image-gallery">
+        <div class="carousel-container">
+            <div class="carousel-main">
+                ${image_gallery} <!-- This will be replaced with individual <img> elements -->
+            </div>
+            <div class="carousel-preview">
+            </div>
+        </div>
+    </section>
+
+    <section id="listing-description">
+        <h2>Property Description</h2>
+        <p>${remarks}</p>
+    </section>
+
+    <section id="features-amenities">
+        <h2>Features and Amenities</h2>
+        <div class="features-grid">
+            <div class="feature-section interior">${interior_features}</div>
+            <div class="feature-section exterior">${exterior_features} ${area_lot_features} </div>
+            <div class="feature-section area-lot">${financial_features}</div>
+        </div>
+    </section>
+
+    <section>
+        <div><p align="center"><a href="https://www.mortgagecalculator.org/"><img src="https://www.mortgagecalculator.org/images/mortgage-calculator-logo.png" width="589" height="57" alt="MortgageCalculator.org" border="0" style="max-width: 100%;" target="_blank"></a></p> <iframe src="https://www.mortgagecalculator.org/webmasters/?downpayment=50000&homevalue=300000&loanamount=250000&interestrate=4&loanterm=30&propertytax=2400&pmi=1&homeinsurance=1000&monthlyhoa=0" style="width: 100%; height: 1200px; border: 0;"></iframe>
+            <div style="font-family: Arial; height: 36px; top: -36px; padding: 0 8px 0 0; box-sizing: border-box; text-align: right; background: #f6f9f9; border: 1px solid #ccc; color: #868686; line-height: 34px; font-size: 12px; position: relative;"> <a style="color: #868686;" href="https://www.mortgagecalculator.org/free-tools/javascript-mortgage-calculator.php" target="_blank">Javascript Mortgage Calculator</a> by MortgageCalculator.org</div>
+          </div>        
+    </section>
+
+    <section id="mls-attribution-section">
+        ${mls_attribution}
+    </section>
+</article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var mainImageContainer = document.querySelector('.carousel-main');
+    var previewContainer = document.querySelector('.carousel-preview');
+    var images = mainImageContainer.querySelectorAll('img');
+    var activeImageIndex = 0;
+
+    function showImage(index) {
+        images.forEach((img, i) => {
+            img.style.display = i === index ? 'block' : 'none';
+        });
+        activeImageIndex = index;
+        updateActivePreview();
+    }
+
+    function updateActivePreview() {
+        var previews = previewContainer.querySelectorAll('img');
+        previews.forEach((preview, index) => {
+            preview.classList.toggle('active', index === activeImageIndex);
+        });
+    }
+
+    // Create and append preview images
+    images.forEach((img, index) => {
+        var previewImg = img.cloneNode();
+        previewImg.onclick = () => showImage(index);
+        previewContainer.appendChild(previewImg);
+    });
+
+    // Initialize carousel by showing the first image
+    showImage(0);
+
+    // Add navigation arrows if more than one image
+    if (images.length > 1) {
+        var leftArrow = document.createElement('a');
+        var rightArrow = document.createElement('a');
+        leftArrow.innerHTML = '&#10094;';
+        rightArrow.innerHTML = '&#10095;';
+        leftArrow.classList.add('carousel-control', 'left');
+        rightArrow.classList.add('carousel-control', 'right');
+
+        leftArrow.onclick = () => showImage((activeImageIndex + images.length - 1) % images.length);
+        rightArrow.onclick = () => showImage((activeImageIndex + 1) % images.length);
+
+        mainImageContainer.appendChild(leftArrow);
+        mainImageContainer.appendChild(rightArrow);
+    } else {
+        previewContainer.style.display = 'none'; // Hide previews if only one image
+    }
+});
+
+</script>

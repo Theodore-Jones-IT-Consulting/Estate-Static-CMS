@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+EstateStatic CMS Code License 
+
+Copyright 2024 Blueprint Cyber Solutions LLC, DBA Theodore Jones Information Technology Consulting
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and 
+associated documentation files (the “Software”), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to 
+the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial 
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+         crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""></script>
+    <style>
+ :root {
+    /* Brand colors */
+    --primary-color: #007bff; /* Example blue color */
+    --accent-color: #d9534f; /* Example red color */
+    --background-color: #f7f7f7;
+    --text-color: #333;
+    --link-color: #007bff;
+    --link-hover-color: #f0f0f0;
+    --footer-background-color: #333;
+    --footer-text-color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    color: var(--text-color);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav.menu {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.menu a {
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+nav.menu a:hover, nav.menu a.active {
+    color: var(--accent-color);
+}
+
+.content {
+    padding: 2rem;
+    background: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer.footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .contact-info, .top-bar .social-media {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .contact-info a, .top-bar .social-media a {
+    color: white;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.top-bar .contact-info a:hover, .top-bar .social-media a:hover {
+    color: var(--accent-color);
+}
+
+.top-bar i {
+    margin-right: 5px;
+}
+
+.listing-navigation {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.listing-navigation a {
+    text-decoration: none;
+    color: var(--link-color);
+    margin: 0 10px;
+}
+
+.listing-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.listing-row {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.listing-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.listing-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.listing-info .price {
+    font-size: 1rem;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.listing-link a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+.pagination {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagination a, .pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    color: var(--link-color);
+}
+
+.pagination a:hover {
+    background-color: var(--link-hover-color);
+}
+
+.pagination span {
+    background-color: var(--link-color);
+    color: white;
+}
+
+#hero-section {
+    position: relative;
+    width: 100%;
+    display: none; /* Hidden by default */
+}
+
+#hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+}
+
+h2, h3 {
+    color: #555;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.feature-section {
+    background: white;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.carousel-main {
+    text-align: center;
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-main img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: none;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.carousel-control.left {
+    left: 10px;
+}
+
+.carousel-control.right {
+    right: 10px;
+}
+
+.carousel-preview {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.carousel-preview img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.carousel-preview img.active {
+    opacity: 1;
+}
+
+/* Testimonials Page Styles */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    text-align: right;
+    color: #007bff;
+}
+
+@media (max-width: 999px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Unique Listings Section */
+.re-listings-section {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.re-listings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.re-listing-item {
+    margin: 15px;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.re-listing-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.re-listing-item p {
+    margin: 10px 0;
+}
+
+.re-listing-price {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <a href="mailto:contact@realestatecompany.com"><i class="fas fa-envelope"></i> contact@realestatecompany.com</a>
+            <a href="tel:123-456-7890"><i class="fas fa-phone"></i> 123-456-7890</a>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/your_facebook_profile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/your_twitter_profile" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/your_linkedin_profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <header>
+        <h1>Real Estate Company</h1>
+    </header>
+    <nav class="menu">
+        <a href="/">Home</a>
+        <a href="/our_team.html">Our Team</a>
+        <a href="/our_services.html">Services</a>
+        <a href="/testimonials.html">Testimonials</a>
+        <a href="/map.html">Search Homes</a>
+        <a href="/listings">Listings In Our Area</a>
+    </nav>
+    <div class="content">
+        <div class='listing-table'>"<div class="listing-navigation"> <a href="index.html">Most Recent</a> | <a href="Highest_Price_First_page_1.html">Highest Price First</a> | <a href="Lowest_Price_First_Page_1.html">Lowest Price First</a></div><div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>18652 East CALLE SOL Row, Oak Ridge, Texas 77389</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $17,997,931</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005256.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>52876 North Newark Blvd B Trace, Houston, Texas 77429</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $18,065,342</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005245.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home14.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>83115 West HARALSON Parkway, The Woodlands, Texas 77346</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $18,678,230</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005168.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>68827 South 99 CT Estates, Houston, Texas 77375</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $18,730,333</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005172.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>9376 South Leask Boulevard, Tomball, Texas 77379</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $18,778,674</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005171.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>31045 South Maggiore Ln. Row, The Woodlands, Texas 77433</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $18,879,583</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005183.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>10915 South Bannister Way Garden, Oak Ridge, Texas 77389</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $19,237,330</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005196.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home11.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>28698 West Viewlake Knolls, Oak Ridge, Texas 77055</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $2,190,359</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005241.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home6.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>78071 East MARQUINA DE AVILA Rise, Tomball, Texas 77433</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $2,400,238</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005203.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home8.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>32644 South DEERCLIFF Junction, Katy, Texas 77346</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $2,652,197</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005175.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>32738 South VISTA MADERA Lane, Tomball, Texas 77024</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $2,893,021</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005216.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>30662 South Perry Hill Falls, Cypress, Texas 77433</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $20,128,158</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005205.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home6.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>15804 South FM 3 Boulevard, Houston, Texas 77429</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $20,220,909</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005199.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>86469 West Zenith Cliff, Houston, Texas 77007</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $20,683,471</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005191.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>74434 East Sweet Bottom Br, Houston, Texas 77096</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $20,714,261</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005192.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>89810 East Running Doe Knoll, Katy, Texas 77006</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $20,764,446</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005194.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>56585 South SW 368 ST& SW 214 AV Groves, The Woodlands, Texas 77095</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $21,445,988</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005160.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home11.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>89419 North US HWY. 301 Pl, Oak Ridge, Texas 77449</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $21,854,919</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005218.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>81545 East PLUMAS CT Trace, Tomball, Texas 77095</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $21,944,509</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005235.html">View Details</a>
+    </div>
+</div>
+<div class="listing-row">
+    <div class="listing-image">
+        <img src="https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg" alt="Featured Image" />
+    </div>
+    <div class="listing-info">
+        <h3>60843 South GAITHER WAY CT, Houston, Texas 77532</h3> <!-- Use the flattened property name -->
+        <p class="price">Price: $22,790,088</p>
+    </div>
+    <div class="listing-link">
+        <a href="/listing/listing_1005254.html">View Details</a>
+    </div>
+</div>
+</div><nav class='pagination'><a href="Lowest_Price_First_page_1.html">&laquo; Previous</a> <a href="Lowest_Price_First_page_1.html">1</a> <span>2</span> <a href="Lowest_Price_First_page_3.html">3</a> <a href="Lowest_Price_First_page_4.html">4</a> <a href="Lowest_Price_First_page_3.html">Next &raquo;</a></nav>
+    </div>
+    <footer class="footer">
+        <p>
+            <i class="fas fa-phone"></i> Phone: 123-456-7890 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> Email: contact@realestatecompany.com
+        </p>
+        <p>
+            &copy; 2024 Real Estate Company. All rights reserved.
+        </p>
+        <p>
+            <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms and Conditions</a>
+        </p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuLinks = document.querySelectorAll('nav.menu a');
+            var currentUrl = window.location.pathname;
+    
+            menuLinks.forEach(function(link) {
+                if (link.getAttribute('href') === currentUrl) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

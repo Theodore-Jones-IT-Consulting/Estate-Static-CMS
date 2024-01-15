@@ -1,0 +1,19 @@
+<!-- listings.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... -->
+</head>
+<body>
+    <h1>Listings</h1>
+    <ul>
+        {% for listing in listings %}
+        <li>
+            {{ listing.address }}
+            <a href="{{ url_for('edit_listing', listing_index=loop.index0) }}">Edit</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_listing') }}">Add New Listing</a>
+</body>
+</html>

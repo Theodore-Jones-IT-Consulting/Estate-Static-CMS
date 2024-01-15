@@ -1,0 +1,1240 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "56585 South SW 368 ST& SW 214 AV Groves, The Woodlands, Texas 77095",
+                "bedrooms": 2,
+                "bathrooms": 5.0,
+                "area": 2607,
+                "listPrice": 21445988,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg",
+                "mlsId": 1005160
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9157176230053,
+                    31.96178204434914
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "73373 West Grace Hollow Estates, Oak Ridge, Texas 77018",
+                "bedrooms": 2,
+                "bathrooms": 3.0,
+                "area": 1036,
+                "listPrice": 3242165,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "mlsId": 1005164
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.91372287334886,
+                    31.94224236473117
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "62993 South Wilbur Ave Pl, The Woodlands, Texas 77007",
+                "bedrooms": 1,
+                "bathrooms": 7.5,
+                "area": 2018,
+                "listPrice": 774444,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "mlsId": 1005165
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.89869943583285,
+                    31.969255771958714
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "96294 West BEAD GRASS TER Gate, Cypress, Texas 77018",
+                "bedrooms": 1,
+                "bathrooms": 8.0,
+                "area": 3363,
+                "listPrice": 17450668,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "mlsId": 1005166
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.93956448335166,
+                    31.96119747547164
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "83115 West HARALSON Parkway, The Woodlands, Texas 77346",
+                "bedrooms": 2,
+                "bathrooms": 7.0,
+                "area": 1535,
+                "listPrice": 18678230,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home14.jpg",
+                "mlsId": 1005168
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.92125403220147,
+                    31.970917888039267
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "70446 West ARABIAN WAY Oval, The Woodlands, Texas 77018",
+                "bedrooms": 2,
+                "bathrooms": 7.0,
+                "area": 4259,
+                "listPrice": 6219566,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "mlsId": 1005169
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.91502844702248,
+                    31.95737574285186
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "30422 West Creek Mist Harbor, Oak Ridge, Texas 77018",
+                "bedrooms": 6,
+                "bathrooms": 7.0,
+                "area": 5269,
+                "listPrice": 15959723,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "mlsId": 1005170
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.94864417099643,
+                    31.95794194022783
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "9376 South Leask Boulevard, Tomball, Texas 77379",
+                "bedrooms": 4,
+                "bathrooms": 6.5,
+                "area": 2671,
+                "listPrice": 18778674,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "mlsId": 1005171
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.86698665859316,
+                    31.974335620435443
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "68827 South 99 CT Estates, Houston, Texas 77375",
+                "bedrooms": 5,
+                "bathrooms": 4.5,
+                "area": 3477,
+                "listPrice": 18730333,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "mlsId": 1005172
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.89364872052319,
+                    31.98010686150029
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "46761 West Deep Step Meadow, Katy, Texas 77377",
+                "bedrooms": 3,
+                "bathrooms": 3.5,
+                "area": 2130,
+                "listPrice": 23507305,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005173
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90532713283706,
+                    31.997060025239367
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "86242 South OCOTILLO CT Boulevard, The Woodlands, Texas 77004",
+                "bedrooms": 6,
+                "bathrooms": 6.0,
+                "area": 3498,
+                "listPrice": 10815936,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "mlsId": 1005174
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.85442469404472,
+                    31.987328418660532
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "32644 South DEERCLIFF Junction, Katy, Texas 77346",
+                "bedrooms": 6,
+                "bathrooms": 4.0,
+                "area": 4985,
+                "listPrice": 2652197,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home8.jpg",
+                "mlsId": 1005175
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.89545859699504,
+                    31.976574816864357
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "21366 South Creek Mist Bluff, Cypress, Texas 77088",
+                "bedrooms": 2,
+                "bathrooms": 5.5,
+                "area": 1452,
+                "listPrice": 13685168,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005177
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.88787818472763,
+                    31.987495956627786
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "32904 East South Bayfront Junction, Cypress, Texas 77006",
+                "bedrooms": 4,
+                "bathrooms": 4.0,
+                "area": 2955,
+                "listPrice": 15838148,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005179
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.8748159351717,
+                    31.994013823526963
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "93796 East Heinlen Court Way, Oak Ridge, Texas 77433",
+                "bedrooms": 4,
+                "bathrooms": 5.0,
+                "area": 1803,
+                "listPrice": 17510603,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "mlsId": 1005180
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.93944556368704,
+                    31.937743675471246
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "39781 West Old Woman Springs Rd Drive, Katy, Texas 77433",
+                "bedrooms": 6,
+                "bathrooms": 4.0,
+                "area": 1990,
+                "listPrice": 10114945,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "mlsId": 1005181
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.93090844692333,
+                    31.954337484899106
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "31045 South Maggiore Ln. Row, The Woodlands, Texas 77433",
+                "bedrooms": 4,
+                "bathrooms": 1.5,
+                "area": 1452,
+                "listPrice": 18879583,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005183
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.89143935435997,
+                    31.964312534749812
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "57691 West MAJESTY STREET Hts, Oak Ridge, Texas 77018",
+                "bedrooms": 5,
+                "bathrooms": 6.0,
+                "area": 2568,
+                "listPrice": 24925949,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "mlsId": 1005185
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.89609107667381,
+                    31.96800521064267
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "84286 North Accors Ave. Creek, Tomball, Texas 77532",
+                "bedrooms": 1,
+                "bathrooms": 4.0,
+                "area": 4054,
+                "listPrice": 4894911,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "mlsId": 1005186
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.8758101515394,
+                    32.002536027099666
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "13045 East Hedstrom Road Falls, Oak Ridge, Texas 77070",
+                "bedrooms": 6,
+                "bathrooms": 3.0,
+                "area": 2305,
+                "listPrice": 7987596,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "mlsId": 1005187
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9436096208577,
+                    31.947276450765628
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "172 North British Colony Boulevard, Oak Ridge, Texas 77077",
+                "bedrooms": 4,
+                "bathrooms": 7.5,
+                "area": 2130,
+                "listPrice": 9014063,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home10.jpg",
+                "mlsId": 1005189
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.88579677825899,
+                    31.99210755042064
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "21095 West Big Horn Court CT, Cypress, Texas 77433",
+                "bedrooms": 5,
+                "bathrooms": 6.5,
+                "area": 1990,
+                "listPrice": 4603355,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "mlsId": 1005190
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90137890219461,
+                    31.97882868641664
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "86469 West Zenith Cliff, Houston, Texas 77007",
+                "bedrooms": 4,
+                "bathrooms": 6.0,
+                "area": 5269,
+                "listPrice": 20683471,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "mlsId": 1005191
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90552299008858,
+                    31.983456434622724
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "74434 East Sweet Bottom Br, Houston, Texas 77096",
+                "bedrooms": 2,
+                "bathrooms": 8.0,
+                "area": 1043,
+                "listPrice": 20714261,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "mlsId": 1005192
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9073679783616,
+                    31.961325704209035
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "34149 East GRANICUS Mews, Houston, Texas 77018",
+                "bedrooms": 6,
+                "bathrooms": 3.0,
+                "area": 2955,
+                "listPrice": 7857291,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home14.jpg",
+                "mlsId": 1005193
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9347128482101,
+                    31.97402277117538
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "89810 East Running Doe Knoll, Katy, Texas 77006",
+                "bedrooms": 5,
+                "bathrooms": 2.5,
+                "area": 2991,
+                "listPrice": 20764446,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "mlsId": 1005194
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90172782387532,
+                    31.966846575092816
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "10915 South Bannister Way Garden, Oak Ridge, Texas 77389",
+                "bedrooms": 3,
+                "bathrooms": 5.5,
+                "area": 722,
+                "listPrice": 19237330,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg",
+                "mlsId": 1005196
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.86474388476789,
+                    31.937147726342417
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "15804 South FM 3 Boulevard, Houston, Texas 77429",
+                "bedrooms": 3,
+                "bathrooms": 1.5,
+                "area": 5607,
+                "listPrice": 20220909,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home6.jpg",
+                "mlsId": 1005199
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.88528010628713,
+                    31.964314079915194
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "12763 South 33 STREET Trce, Tomball, Texas 77024",
+                "bedrooms": 5,
+                "bathrooms": 7.5,
+                "area": 240,
+                "listPrice": 7633393,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home13.jpg",
+                "mlsId": 1005200
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.87693834939368,
+                    31.95211645175509
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "78071 East MARQUINA DE AVILA Rise, Tomball, Texas 77433",
+                "bedrooms": 6,
+                "bathrooms": 4.5,
+                "area": 651,
+                "listPrice": 2400238,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home6.jpg",
+                "mlsId": 1005203
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90514291139888,
+                    31.98193997209925
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "19078 North EFFIE Mall, Tomball, Texas 77070",
+                "bedrooms": 5,
+                "bathrooms": 7.0,
+                "area": 2991,
+                "listPrice": 3769504,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "mlsId": 1005204
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9226872069603,
+                    31.944203121809036
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "30662 South Perry Hill Falls, Cypress, Texas 77433",
+                "bedrooms": 5,
+                "bathrooms": 3.5,
+                "area": 3363,
+                "listPrice": 20128158,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "mlsId": 1005205
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.91572285046605,
+                    31.9523395173614
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "39071 West HIGHLAND AVE Forge, Cypress, Texas 77433",
+                "bedrooms": 4,
+                "bathrooms": 7.0,
+                "area": 1452,
+                "listPrice": 4005198,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "mlsId": 1005207
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9035687539901,
+                    31.979275371870482
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "63336 East EVERETT PL Mews, Oak Ridge, Texas 77073",
+                "bedrooms": 4,
+                "bathrooms": 8.5,
+                "area": 987,
+                "listPrice": 16194569,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005211
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.8928370717436,
+                    31.990676820073528
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "68385 North Giaramita Row, Katy, Texas 77004",
+                "bedrooms": 1,
+                "bathrooms": 6.0,
+                "area": 2840,
+                "listPrice": 9243871,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "mlsId": 1005212
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.85801250266563,
+                    31.950471293376154
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "18985 West Perry Hill Trce, Oak Ridge, Texas 77429",
+                "bedrooms": 5,
+                "bathrooms": 6.0,
+                "area": 2991,
+                "listPrice": 14218255,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home8.jpg",
+                "mlsId": 1005213
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.92471956924838,
+                    31.978080214690838
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "14463 West 8710 GLEN ARBOR RD Trace, Cypress, Texas 77433",
+                "bedrooms": 4,
+                "bathrooms": 6.5,
+                "area": 3449,
+                "listPrice": 13564260,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "mlsId": 1005214
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90747379004944,
+                    31.955373552562225
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "55679 East Puette Link, Tomball, Texas 77433",
+                "bedrooms": 1,
+                "bathrooms": 6.0,
+                "area": 1648,
+                "listPrice": 6054541,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "mlsId": 1005215
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90877181190712,
+                    31.9559144660345
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "32738 South VISTA MADERA Lane, Tomball, Texas 77024",
+                "bedrooms": 2,
+                "bathrooms": 9.0,
+                "area": 1562,
+                "listPrice": 2893021,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "mlsId": 1005216
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.91665938594622,
+                    31.946760077132087
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "89419 North US HWY. 301 Pl, Oak Ridge, Texas 77449",
+                "bedrooms": 6,
+                "bathrooms": 9.0,
+                "area": 3363,
+                "listPrice": 21854919,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home11.jpg",
+                "mlsId": 1005218
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.89284675149933,
+                    31.953690484088387
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "91910 East Somerset N. Knolls, Houston, Texas 77008",
+                "bedrooms": 4,
+                "bathrooms": 8.0,
+                "area": 3363,
+                "listPrice": 13717919,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home12.jpg",
+                "mlsId": 1005219
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9018,
+                    31.958740393426346
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "78094 West ARABIAN WAY Cliff, Cypress, Texas 77007",
+                "bedrooms": 1,
+                "bathrooms": 6.5,
+                "area": 5626,
+                "listPrice": 9390388,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "mlsId": 1005220
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.91018041233015,
+                    31.979975773756397
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "8369 West MAJESTY STREET Path, Oak Ridge, Texas 77379",
+                "bedrooms": 3,
+                "bathrooms": 6.5,
+                "area": 5607,
+                "listPrice": 9375751,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "mlsId": 1005221
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9052067975629,
+                    31.97540813883343
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "76520 North MAXEY HILL Boulevard, The Woodlands, Texas 77024",
+                "bedrooms": 5,
+                "bathrooms": 1.5,
+                "area": 5607,
+                "listPrice": 9878825,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home9.jpg",
+                "mlsId": 1005222
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90191696646535,
+                    31.969029797905822
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "65991 North THE PASEO Fwy, Oak Ridge, Texas 77433",
+                "bedrooms": 3,
+                "bathrooms": 7.0,
+                "area": 10100,
+                "listPrice": 419294,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home15.jpg",
+                "mlsId": 1005227
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.87148177177365,
+                    31.992574528864765
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "92270 South 2991 Bryant ST Pl, Houston, Texas 77043",
+                "bedrooms": 1,
+                "bathrooms": 5.0,
+                "area": 1562,
+                "listPrice": 80658,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "mlsId": 1005229
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.93017575536953,
+                    31.970702844039486
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "59603 West Zuelke Forge, Katy, Texas 77007",
+                "bedrooms": 3,
+                "bathrooms": 6.0,
+                "area": 2607,
+                "listPrice": 16438971,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005230
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.9023453182194,
+                    31.970776376760078
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "22690 West Hunters Hollow Garden, Oak Ridge, Texas 77095",
+                "bedrooms": 4,
+                "bathrooms": 4.5,
+                "area": 722,
+                "listPrice": 9199166,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home8.jpg",
+                "mlsId": 1005231
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.88115969371927,
+                    31.965824940476264
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "49764 West ORRINGTON PAYNE Mews, The Woodlands, Texas 77546",
+                "bedrooms": 6,
+                "bathrooms": 4.0,
+                "area": 5515,
+                "listPrice": 23662354,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "mlsId": 1005233
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.93503080980538,
+                    31.946565185636874
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "81545 East PLUMAS CT Trace, Tomball, Texas 77095",
+                "bedrooms": 4,
+                "bathrooms": 6.5,
+                "area": 4985,
+                "listPrice": 21944509,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005235
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.8903887875965,
+                    31.96449014771044
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "70490 North FAIRHAVEN PL Creek, Houston, Texas 77008",
+                "bedrooms": 5,
+                "bathrooms": 4.0,
+                "area": 3498,
+                "listPrice": 8958673,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home10.jpg",
+                "mlsId": 1005236
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.93376226875482,
+                    31.951649648464603
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "26532 North 240 Old River LN Fwy, Katy, Texas 77068",
+                "bedrooms": 4,
+                "bathrooms": 3.0,
+                "area": 3261,
+                "listPrice": 14008098,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "mlsId": 1005237
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.88938770874408,
+                    31.95730615435212
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "2976 North British Colony Lndg, Houston, Texas 77377",
+                "bedrooms": 3,
+                "bathrooms": 7.0,
+                "area": 4553,
+                "listPrice": 17236623,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005240
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.89484864487166,
+                    31.957959925232096
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "28698 West Viewlake Knolls, Oak Ridge, Texas 77055",
+                "bedrooms": 4,
+                "bathrooms": 6.0,
+                "area": 2991,
+                "listPrice": 2190359,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home11.jpg",
+                "mlsId": 1005241
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.92683820801801,
+                    32.00690109882811
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "54709 South Bannister Way Hts, The Woodlands, Texas 77433",
+                "bedrooms": 6,
+                "bathrooms": 3.5,
+                "area": 240,
+                "listPrice": 17592003,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home6.jpg",
+                "mlsId": 1005242
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.88733959109186,
+                    31.992668837717066
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "11416 North Tiger Horse Extension, Cypress, Texas 77007",
+                "bedrooms": 5,
+                "bathrooms": 7.0,
+                "area": 2991,
+                "listPrice": 24266835,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg",
+                "mlsId": 1005243
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.87199698708126,
+                    31.957338403319625
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "23813 East Rush Creek Way Estates, Katy, Texas 77096",
+                "bedrooms": 1,
+                "bathrooms": 2.5,
+                "area": 2472,
+                "listPrice": 13809040,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home2.jpg",
+                "mlsId": 1005244
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.91009644923714,
+                    31.956884709861548
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "52876 North Newark Blvd B Trace, Houston, Texas 77429",
+                "bedrooms": 4,
+                "bathrooms": 7.5,
+                "area": 3534,
+                "listPrice": 18065342,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home7.jpg",
+                "mlsId": 1005245
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.89757038228318,
+                    31.976658332645766
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "20349 North LOST SPRING Fwy, Oak Ridge, Texas 77014",
+                "bedrooms": 2,
+                "bathrooms": 1.5,
+                "area": 2130,
+                "listPrice": 1066737,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "mlsId": 1005246
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.90653379335427,
+                    31.962645770831163
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "90678 South VELLUM Extension, Cypress, Texas 77429",
+                "bedrooms": 5,
+                "bathrooms": 5.0,
+                "area": 1990,
+                "listPrice": 12104869,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "mlsId": 1005252
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.8858900913422,
+                    31.956011138946845
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "1824 North EFFIE Circle, Cypress, Texas 77004",
+                "bedrooms": 4,
+                "bathrooms": 6.5,
+                "area": 8308,
+                "listPrice": 16742578,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home5.jpg",
+                "mlsId": 1005253
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.95350266701665,
+                    31.975535953605654
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "60843 South GAITHER WAY CT, Houston, Texas 77532",
+                "bedrooms": 4,
+                "bathrooms": 4.5,
+                "area": 1623,
+                "listPrice": 22790088,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg",
+                "mlsId": 1005254
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.91149390985922,
+                    31.93560425803987
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "36992 West Georgetown(lot 18) Boulevard, Houston, Texas 77429",
+                "bedrooms": 4,
+                "bathrooms": 6.5,
+                "area": 1562,
+                "listPrice": 6070556,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home14.jpg",
+                "mlsId": 1005255
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.87684568503667,
+                    31.958271243539887
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "18652 East CALLE SOL Row, Oak Ridge, Texas 77389",
+                "bedrooms": 3,
+                "bathrooms": 3.5,
+                "area": 5415,
+                "listPrice": 17997931,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home16.jpg",
+                "mlsId": 1005256
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.91239065109855,
+                    31.942499389521824
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "fullAddress": "17293 West SR 135 N Trce, Oak Ridge, Texas 77346",
+                "bedrooms": 1,
+                "bathrooms": 7.0,
+                "area": 2671,
+                "listPrice": 13702614,
+                "listingPhoto": "https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home3.jpg",
+                "mlsId": 1005257
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -99.88363224834279,
+                    31.99325707764805
+                ]
+            }
+        }
+    ]
+}
