@@ -7,3 +7,4 @@ services:
       - "27894:80"
     volumes:
       - ./dummyweb:/usr/local/apache2/htdocs/
+    restart: always
