@@ -54,7 +54,7 @@ This Python script is crafted for generating mock real estate listing data, part
 
 1. **Data Generation**:
    - **Coordinates**: Randomly generates geographic coordinates within a specific range.
-   - **Address**: Creates random addresses using predefined streets in Philadelphia, PA.
+   - **Address**: Creates random addresses.
    - **Images**: Generates URLs for a random number of images per listing.
    - **Agent and Company**: Randomly selects agent names and real estate companies from predefined lists.
    - **Property Attributes**: Randomly assigns year built, bedrooms, bathrooms, area, etc.
