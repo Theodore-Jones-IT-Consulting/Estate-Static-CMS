@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    image: httpd:latest
+    ports:
+      - "27894:80"
+    volumes:
+      - ./dummyweb:/usr/local/apache2/htdocs/
