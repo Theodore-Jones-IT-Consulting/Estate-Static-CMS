@@ -10,10 +10,43 @@ Requirements:
    - Python environment.
    - Necessary libraries: `os`, `argparse`, `string`.
 
+1. **Dependencies**:
+   - Python environment.
+   - `json` and `random` libraries for data processing.
+   - `geopy` library for geographical computations.
 
 # Page Generator Scripts
 
 The page generator scripts can be found at the root folder of this repository 
+
+### Simplified MLS Data Generation Script
+
+This script converts the full MLS data into a smaller, simplified form with fewer data points which can be loaded in bulk by client side JS without using too much download bandwidth, even if thousands of entries are downloaded. This is used by the search page. 
+- **Demo Mode**: Option to generate random coordinates for property listings, useful for demonstrations or testing without using actual location data.
+
+#### Technical Details
+
+1. **Input and Output**:
+   - Input: A detailed GeoJSON file containing MLS data.
+   - Output: A simplified GeoJSON file, significantly reduced in size.
+
+2. **Functionality**:
+   - Extracts essential property details (address, bedrooms, bathrooms, area, list price, listing photo, MLS ID) from the input data.
+   - Option to replace actual geographical coordinates with random ones within a specified distance from a given origin (in demo mode).
+   - Outputs a cleaner, lighter GeoJSON file optimized for web usage.
+
+3. **Execution**:
+   - Run the script via the command line, specifying the input and output file paths, and optionally enable demo mode.
+
+#### Sample Command
+```bash
+python path_to_script.py /path_to_input_file.geojson /path_to_output_file.geojson --demo
+```
+
+- Replace `path_to_script.py` with the actual script path.
+- `/path_to_input_file.geojson` and `/path_to_output_file.geojson` should be replaced with the respective paths for the input and output files.
+- The `--demo` flag is optional and generates random coordinates for the properties.
+
 
 ## Testimonials Page 
 
@@ -21,11 +54,7 @@ The script that generates the testimonials page is `testimonials.py`
 
 `python path_to_script.py /path_to_template_directory /path_to_output_directory`
 
-
-This script is designed to dynamically generate a testimonials page for a real estate website. It automates the process of incorporating client testimonials into a predefined HTML template, ensuring a consistent and professional appearance across the site.
-
-- **Functionality**: The script reads client testimonials from a JSON file and integrates them into an HTML template, resulting in a complete testimonials page.
-- **Output**: The final output is an HTML file named `testimonials.html` that contains all the testimonials formatted according to the website's design standards.
+This script is designed to dynamically generate a testimonials page. The script reads client testimonials from a JSON file and integrates them into an HTML template, resulting in a complete testimonials page. The final output is an HTML file named `testimonials.html` that contains all the testimonials formatted according to the website's design standards.
 
 ### Technical Details
 
@@ -41,8 +70,6 @@ This script is designed to dynamically generate a testimonials page for a real e
    - `generate_testimonials_html(testimonials)`: Processes each testimonial from the JSON file and formats it into HTML.
    - The script substitutes the testimonials HTML into the master template using a safe substitution method.
 
-4. **Customization**:
-   - The script can be modified to accommodate different JSON structures or HTML templates, making it versatile for various design needs.
 ###  Structuring the Testimonials JSON File
 
 #### Overview
