@@ -58,7 +58,7 @@ def generate_paginated_html(listings, listing_template, master_template, output_
         page_listings = listings[(page - 1) * LISTINGS_PER_PAGE : page * LISTINGS_PER_PAGE]
 
         content = ''
-        content += '"<div class="listing-navigation"> <a href="index.html">Most Recent</a> | <a href="Highest_Price_First_page_1.html">Highest Price First</a> | <a href="Lowest_Price_First_Page_1.html">Lowest Price First</a></div>'
+        content += '"<div class="listing-navigation"> <a href="index.html">Most Recent</a> | <a href="Highest_Price_First_page_1.html">Highest Price First</a> | <a href="Lowest_Price_First_page_1.html">Lowest Price First</a></div>'
         for listing in page_listings:
             # Flatten the properties
             flattened_props = listing['properties']
