@@ -11,6 +11,38 @@ Requirements:
 
 The page generator scripts can be found at the root folder of this repository 
 
+### Documentation: Master Template Filling Script
+
+This script is designed to fill the master HTML template with site-wide constant information such as social media links, contact phone numbers, and email addresses. 
+
+- **Functionality**: Reads data from a JSON file and injects this information into specific placeholders in the master HTML template.
+- **Output**: A new HTML file (`filled_master_template.html`) that contains the updated site-wide information, ready to be used across the website.
+
+#### Technical Details
+
+1. **Input and Output**:
+   - Input: A master HTML template and a JSON file containing the site-wide information.
+   - Output: A new HTML file with the template filled with the provided data.
+
+2. **Execution**:
+   - Run the script via the command line, specifying the directory of the HTML template and the path to the JSON data file.
+
+3. **Key Functions**:
+   - `generate_top_bar_content(social_links, phone, email)`: Generates HTML content for the top bar of the site, including social media links, phone number, and email address.
+   - `fill_master_template(template_dir, data_file)`: Fills the master template with the provided data and generates the updated HTML file.
+
+4. **Customization and Adaptability**:
+   - The script can be modified to accommodate different data structures in the JSON file or different template structures.
+
+#### Sample Command
+```bash
+python path_to_script.py /path_to_template_directory /path_to_data_file.json
+```
+
+- Replace `path_to_script.py` with the actual path to the script file.
+- `/path_to_template_directory` should be the directory where the master HTML template is stored.
+- `/path_to_data_file.json` is the path to the JSON file containing the site-wide data.
+
 ## Paginated Listing Pages Generator Script
 
 This Python script is designed to create paginated HTML pages for property listings from a JSON data file. It's ideal for real estate websites that need to display numerous listings in an organized and navigable format.
