@@ -7,6 +7,26 @@ Requirements:
 - Markdown module (for Markdown files conversion)
 - `geopy` library for geographical computations.
 
+An example of a list of commands that can be used to do all of the steps of building a site, except for downloading MLS data is as follows. For MLS downloading see the later parts of this documentation.
+
+# Template HTML Files
+
+A default template can be found in the `template` folder of this repository. The template contains all content that is individual to the theme used and the site being built. 
+
+A sample of a fully built website can be found in the `dummyweb` folder. 
+
+`master_template.html` -- This HTML file contains the site-wide template, including things like headers, the main menu, the footer, and similar. 
+
+`map_template.html` -- This HTML template contains an interactive map and a filter section for property listings. Users can filter properties based on price, bedrooms, bathrooms, and type, with results displayed on the map and in a listing container. The template uses Leaflet.js for map functionality, adjusts layout responsively for different screen sizes, and includes custom styling for a user-friendly interface.
+
+`listing_template.html` -- This HTML template is used to generate individual listings. 
+
+`listing_page_template.html`  -- This HTML template is used to build out pages that contains a large number of listings, in particular, the pages showing all listings. 
+
+`listing_content_template.html` -- This HTML template is for an individual listing page that contains all of the details about a listing. 
+
+`scripts` folder -- this contains the scripts that define shortcodes 
+
 # Page Generator Scripts
 
 The page generator scripts can be found at the root folder of this repository.
@@ -39,7 +59,7 @@ This Python script is designed to download real estate listing data from the Sim
 
 #### Sample Command
 ```bash
-python path_to_script.py --api_key_file /path_to_api_key_file --api_secret_file /path_to_api_secret_file
+python download_mls.py --api_key_file /path_to_api_key_file --api_secret_file /path_to_api_secret_file
 ```
 - `/path_to_api_key_file` and `/path_to_api_secret_file` should be the paths to the files containing the API key and secret, respectively.
 
@@ -68,7 +88,7 @@ This Python script is crafted for generating mock real estate listing data, part
 #### Sample Usage
 Run the script without any arguments:
 ```bash
-python path_to_script.py
+python dummy_listing.py
 ```
 
 ## Master Template Filling Script
@@ -96,7 +116,7 @@ This script is designed to fill the master HTML template with site-wide constant
 
 #### Sample Command
 ```bash
-python path_to_script.py /path_to_template_directory /path_to_data_file.json
+python generate_template.py /path_to_template_directory /path_to_data_file.json
 ```
 
 - `/path_to_template_directory` should be the directory where the master HTML template is stored.
@@ -130,7 +150,7 @@ This Python script is designed to create paginated HTML pages for property listi
 
 #### Sample Command
 ```bash
-python path_to_script.py /path_to_template_directory /path_to_output_directory /path_to_json_file
+python listing_list_page.py /path_to_template_directory /path_to_output_directory /path_to_json_file
 ```
 
 - `/path_to_template_directory` is the directory where HTML templates are stored.
@@ -166,7 +186,7 @@ This Python script is crafted to automate the generation of individual HTML page
 
 #### Sample Command
 ```bash
-python path_to_script.py /path_to_template_directory /path_to_output_directory /path_to_json_file
+python listing_pages_generator.py /path_to_template_directory /path_to_output_directory /path_to_json_file
 ```
 
 - `/path_to_template_directory` should be the directory where HTML templates are stored.
@@ -197,7 +217,7 @@ This Python script is designed to generate a map page for property listings, com
 
 #### Sample Command
 ```bash
-python path_to_script.py /path_to_template_directory /path_to_output_directory
+python map_maker.py /path_to_template_directory /path_to_output_directory
 ```
 
 - `/path_to_template_directory` should be replaced with the path to the directory where your HTML templates are stored.
@@ -224,7 +244,7 @@ This script converts the full MLS data into a smaller, simplified form with fewe
 
 #### Sample Command
 ```bash
-python path_to_script.py /path_to_input_file.geojson /path_to_output_file.geojson --demo
+python mls_convert.py /path_to_input_file.geojson /path_to_output_file.geojson --demo
 ```
 
 - `/path_to_input_file.geojson` and `/path_to_output_file.geojson` should be replaced with the respective paths for the input and output files.
@@ -235,7 +255,7 @@ python path_to_script.py /path_to_input_file.geojson /path_to_output_file.geojso
 
 The script that generates the testimonials page is `testimonials.py`
 
-`python path_to_script.py /path_to_template_directory /path_to_output_directory`
+`python testimonials.py /path_to_template_directory /path_to_output_directory`
 
 This script is designed to dynamically generate a testimonials page. The script reads client testimonials from a JSON file and integrates them into an HTML template, resulting in a complete testimonials page. The final output is an HTML file named `testimonials.html` that contains all the testimonials formatted according to the website's design standards.
 
