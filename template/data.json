@@ -27,7 +27,7 @@
             "homepage": true
         },
         {
-            "profile_photo_url": "https://res-console.cloudinary.com/dwkjuhb46/thumbnails/v1/image/upload/v1705341629/c2FtcGxlcy9zbWlsZQ==/template_primary/d18xMDAwLGFyXzE6MSxjX2ZpbGwsZ19hdXRvLGVfYXJ0Omhva3VzYWk=",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705342809/pexels-lawal-adeyanju-16465173_txrcao.jpg",
             "name": "John Smith",
             "title": "Senior Real Estate Agent",
             "license_number": "CD2345678",
@@ -43,7 +43,7 @@
             "homepage": false
         },
         {
-            "profile_photo_url": "https://res-console.cloudinary.com/dwkjuhb46/thumbnails/v1/image/upload/v1705341635/Y2xkLXNhbXBsZQ==/template_primary/d18xMDAwLGFyXzE6MSxjX2ZpbGwsZ19hdXRvLGVfYXJ0Omhva3VzYWk=",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705342455/pexels-karolina-grabowska-7680212_fi0ffo.jpg",
             "name": "Emma Johnson",
             "title": "Real Estate Consultant",
             "license_number": "EF3456789",
@@ -59,7 +59,7 @@
             "homepage": true
         },
         {
-            "profile_photo_url": "https://res-console.cloudinary.com/dwkjuhb46/thumbnails/v1/image/upload/v1705342455/cGV4ZWxzLWthcm9saW5hLWdyYWJvd3NrYS03NjgwMjEyX2ZpMGZmbw==/template_primary/d18xMDAwLGFyXzE6MSxjX2ZpbGwsZ19hdXRvLGVfYXJ0Omhva3VzYWk=",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705341683/pexels-karolina-grabowska-8528852_uae8sq.jpg",
             "name": "Olivia Brown",
             "title": "Associate Real Estate Agent",
             "license_number": "GH4567890",
@@ -75,7 +75,7 @@
             "homepage": false
         },
         {
-            "profile_photo_url": "https://res-console.cloudinary.com/dwkjuhb46/thumbnails/v1/image/upload/v1705342809/cGV4ZWxzLWxhd2FsLWFkZXlhbmp1LTE2NDY1MTczX3R4cmNhbw==/template_primary/d18xMDAwLGFyXzE6MSxjX2ZpbGwsZ19hdXRvLGVfYXJ0Omhva3VzYWk=",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705341683/pexels-karolina-grabowska-8528852_uae8sq.jpg",
             "name": "Michael Davis",
             "title": "Real Estate Broker",
             "license_number": "IJ5678901",
