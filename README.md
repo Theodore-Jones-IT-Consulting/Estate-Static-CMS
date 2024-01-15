@@ -9,7 +9,39 @@ Requirements:
 
 # Page Generator Scripts
 
-The page generator scripts can be found at the root folder of this repository 
+The page generator scripts can be found at the root folder of this repository.
+
+## MLS Data Downloader Script
+
+This Python script is designed to download real estate listing data from the SimplyRETS API and convert it into a GeoJSON format.
+
+- **Functionality**: Fetches property listings data using API credentials, formats the data into a GeoJSON structure, and saves it as a file.
+- **Output**: A `mls_data.geojson` file containing the formatted property listings.
+
+#### Technical Details
+
+1. **Data Retrieval and Processing**:
+   - Fetches data from SimplyRETS API using provided API key and secret.
+   - Handles pagination in API responses to retrieve all available listings.
+   - Converts each property listing into a GeoJSON feature.
+
+2. **Execution**:
+   - Run the script via the command line, optionally specifying paths to files containing the API key and secret.
+
+3. **Key Functions**:
+   - `fetch_mls_data()`: Retrieves property listings from the API.
+   - `format_property_to_feature()`: Transforms a property listing into a GeoJSON feature.
+   - `format_to_geojson()`: Compiles all features into a GeoJSON feature collection.
+   - `save_geojson()`: Saves the GeoJSON data to a file.
+
+4. **Customization and Adaptability**:
+   - The script can be modified to handle different API structures or additional data fields.
+
+#### Sample Command
+```bash
+python path_to_script.py --api_key_file /path_to_api_key_file --api_secret_file /path_to_api_secret_file
+```
+- `/path_to_api_key_file` and `/path_to_api_secret_file` should be the paths to the files containing the API key and secret, respectively.
 
 ## Real Estate Mock Listings Data Generation Script
 
