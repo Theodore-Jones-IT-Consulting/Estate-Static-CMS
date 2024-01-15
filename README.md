@@ -11,6 +11,42 @@ Requirements:
 
 The page generator scripts can be found at the root folder of this repository 
 
+## Paginated Listing Pages Generator Script
+
+This Python script is designed to create paginated HTML pages for property listings from a JSON data file. It's ideal for real estate websites that need to display numerous listings in an organized and navigable format.
+
+### Usage
+- **Functionality**: The script reads property data from a JSON file and generates HTML pages, each containing a specified number of listings. It supports different sorting options and pagination.
+- **Output**: A set of HTML files for each pagination page, sorted by different criteria like most recent, highest price first, and lowest price first.
+
+### Technical Details
+
+1. **Input and Output**:
+   - Input: A JSON file with property listings and HTML templates for individual listings and the master page layout.
+   - Output: Multiple HTML files for paginated listing pages, stored in the specified output directory.
+
+2. **Execution**:
+   - Run the script via the command line, providing the template directory, output directory, and the JSON file path.
+
+3. **Key Functions**:
+   - `generate_pagination_links()`: Creates navigable pagination links for traversing between pages.
+   - `generate_paginated_html()`: Generates HTML content for each paginated page, incorporating listing details and pagination links.
+   - `sort_listings()`: Sorts listings based on specified criteria like price or date.
+
+4. **Customization and Adaptability**:
+   - Templates can be modified for different website designs and layouts.
+   - The script can be adjusted to accommodate different JSON structures or sorting criteria.
+
+#### Sample Command
+```bash
+python path_to_script.py /path_to_template_directory /path_to_output_directory /path_to_json_file
+```
+
+- `path_to_script.py` should be replaced with the actual path to the script.
+- `/path_to_template_directory` is the directory where HTML templates are stored.
+- `/path_to_output_directory` is where the generated HTML files will be saved.
+- `/path_to_json_file` is the path to the JSON file containing the property listings.
+
 ## Property Listings HTML Generator Script
 
 #### Overview
