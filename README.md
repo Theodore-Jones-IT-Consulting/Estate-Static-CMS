@@ -4,7 +4,7 @@ This isn't quite production ready, but it is very functional and there is a func
 
 The benefit of a static site generator method is that it's very high performance with fast loading times compared to traditional CMSes like Wordpress. All HTML is prebuilt, and static. This means it is much faster than data models that require regenerating page content for every visit. This method also causes a lot less CPU and RAM usage, particualrly under high traffic. 
 
-Additionally, static sites are extremely cacheable, allowing for effectively infinite scalability without adding new server if paired with a CDN like Cloudflare. 
+Additionally, static sites are extremely cacheable, allowing for effectively infinite scalability without adding new server resources if paired with a CDN like Cloudflare. 
 
 The key features of this include 
 
