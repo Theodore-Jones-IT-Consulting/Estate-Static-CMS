@@ -11,6 +11,34 @@ Requirements:
 
 The page generator scripts can be found at the root folder of this repository 
 
+## Real Estate Mock Listings Data Generation Script
+
+This Python script is crafted for generating mock real estate listing data, particularly useful for testing and development purposes. It creates a large number of simulated property listings with random attributes, formatted as a GeoJSON file. 
+
+- **Functionality**: Produces a customizable number of mock real estate listings with random characteristics like location, images, agent details, and property specifics.
+- **Output**: A `mock_listings.geojson` file, containing the generated listings in GeoJSON format.
+
+###
+
+1. **Data Generation**:
+   - **Coordinates**: Randomly generates geographic coordinates within a specific range.
+   - **Address**: Creates random addresses using predefined streets in Philadelphia, PA.
+   - **Images**: Generates URLs for a random number of images per listing.
+   - **Agent and Company**: Randomly selects agent names and real estate companies from predefined lists.
+   - **Property Attributes**: Randomly assigns year built, bedrooms, bathrooms, area, etc.
+
+2. **Output**:
+   - The script outputs a GeoJSON file (`mock_listings.geojson`) containing a `FeatureCollection` with each property represented as a `Feature`.
+
+3. **Execution**:
+   - Run the script via the command line. The script generates 25,000 mock listings by default.
+
+#### Sample Usage
+Run the script without any arguments:
+```bash
+python path_to_script.py
+```
+
 ## Master Template Filling Script
 
 This script is designed to fill the master HTML template with site-wide constant information such as social media links, contact phone numbers, and email addresses. 
@@ -39,7 +67,6 @@ This script is designed to fill the master HTML template with site-wide constant
 python path_to_script.py /path_to_template_directory /path_to_data_file.json
 ```
 
-- Replace `path_to_script.py` with the actual path to the script file.
 - `/path_to_template_directory` should be the directory where the master HTML template is stored.
 - `/path_to_data_file.json` is the path to the JSON file containing the site-wide data.
 
@@ -74,7 +101,6 @@ This Python script is designed to create paginated HTML pages for property listi
 python path_to_script.py /path_to_template_directory /path_to_output_directory /path_to_json_file
 ```
 
-- `path_to_script.py` should be replaced with the actual path to the script.
 - `/path_to_template_directory` is the directory where HTML templates are stored.
 - `/path_to_output_directory` is where the generated HTML files will be saved.
 - `/path_to_json_file` is the path to the JSON file containing the property listings.
@@ -111,7 +137,6 @@ This Python script is crafted to automate the generation of individual HTML page
 python path_to_script.py /path_to_template_directory /path_to_output_directory /path_to_json_file
 ```
 
-- Replace `path_to_script.py` with the actual path to the script file.
 - `/path_to_template_directory` should be the directory where HTML templates are stored.
 - `/path_to_output_directory` is where the generated HTML files will be saved.
 - `/path_to_json_file` is the path to the JSON file containing property listings.
@@ -143,7 +168,6 @@ This Python script is designed to generate a map page for property listings, com
 python path_to_script.py /path_to_template_directory /path_to_output_directory
 ```
 
-- Replace `path_to_script.py` with the actual path to the script file.
 - `/path_to_template_directory` should be replaced with the path to the directory where your HTML templates are stored.
 - `/path_to_output_directory` should be replaced with the path to the directory where you want the generated `map.html` file to be saved.
 
@@ -171,7 +195,6 @@ This script converts the full MLS data into a smaller, simplified form with fewe
 python path_to_script.py /path_to_input_file.geojson /path_to_output_file.geojson --demo
 ```
 
-- Replace `path_to_script.py` with the actual script path.
 - `/path_to_input_file.geojson` and `/path_to_output_file.geojson` should be replaced with the respective paths for the input and output files.
 - The `--demo` flag is optional and generates random coordinates for the properties.
 
