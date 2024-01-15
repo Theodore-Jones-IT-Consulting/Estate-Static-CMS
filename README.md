@@ -1,3 +1,18 @@
+This is a real estate oriented static site generator content management system, designed to help build the website for a real estate agent, or a small real estate group/brokerage. 
+
+This isn't quite production ready, but it is very functional and there is a functional demonstration of all of the key features, but a few of the more UI-oriented features and themeing is incomplete. I'd say its about 90% of the way to being something that I would concider using on a live site, and I will likley get it to that point odf being ready for a real site very soon (ie. within the month) 
+
+The benefit of a static site generator method is it's very high performance with fast loading times compared to traditional CMSes like Wordpress. All HTML is prebuilt, and static. This means it is much faster than data models that require regenerating page content for every visit. This method also causes a lot less CPU and RAM usage, particualrly under high traffic. 
+
+Additionally, static sites are extremely cacheable, allowing for effectively infinite scalability without adding new server if paired with a CDN like Cloudflare. 
+
+The key features of this include 
+
+* The ability to fully support MLS data without forgoing the static site nature of the CMS. This includes listings pages, and the ability to showcase listings in the agents' area. It is able to quickly (in a matter of minutes) generate a static page for each listing in an MLS, along with paginated views of all of the listings. Support for pages that are limited by polygons, and stats on a region is planned.
+* A listings search page
+* Testimonials page
+* The ability to generate custom pages complete with custom shortcodes.
+
 # Running and Requirements
 
 ## Requirements
