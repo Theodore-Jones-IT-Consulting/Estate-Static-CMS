@@ -1,6 +1,6 @@
 This is a real estate oriented static site generator content management system, designed to help build the website for a real estate agent, or a small real estate group/brokerage. 
 
-This isn't quite production ready, but it is very functional and there is a functional demonstration of all of the key features, but a few of the more UI-oriented features and themeing is incomplete. I'd say its about 90% of the way to being something that I would concider using on a live site, and I will likley get it to that point odf being ready for a real site very soon (ie. within the month) 
+This isn't quite production ready, but it is very functional and there is a functional demonstration of all of the key features, but a few of the more UI-oriented features and themeing is incomplete. I'd say its about 90% of the way to being something that I would concider using on a live site, and I will likley get it to that point of being ready for a real site very soon (ie. within the month) 
 
 The benefit of a static site generator method is it's very high performance with fast loading times compared to traditional CMSes like Wordpress. All HTML is prebuilt, and static. This means it is much faster than data models that require regenerating page content for every visit. This method also causes a lot less CPU and RAM usage, particualrly under high traffic. 
 
