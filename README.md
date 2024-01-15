@@ -11,6 +11,43 @@ Requirements:
 
 The page generator scripts can be found at the root folder of this repository 
 
+## Property Listings HTML Generator Script
+
+#### Overview
+This Python script is crafted to automate the generation of individual HTML pages for property listings, utilizing provided templates and data from a JSON file.
+
+- **Functionality**: Processes a JSON file containing property data, and generates HTML pages for each listing by populating predefined templates with specific property details.
+- **Output**: HTML files for each property listing, named using the property's MLS ID.
+
+#### Technical Details
+
+1. **Input and Output**:
+   - Input: A JSON file with property listing data and HTML templates for the content and overall page structure.
+   - Output: HTML files for each listing, stored in the specified output directory.
+
+2. **Execution**:
+   - Run the script via the command line, providing paths to the template directory, output directory, and the JSON file.
+
+3. **Key Functions**:
+   - `generate_image_gallery(images)`: Creates HTML for an image gallery from a list of image URLs.
+   - `generate_features_section(features)`: Generates HTML for various property features (interior, exterior, financial, etc.).
+   - `create_html_page(feature, template_dir, destination_folder)`: Produces the complete HTML page for a single listing.
+   - `process_listings(template_dir, output_dir, json_file)`: Processes all listings in the JSON file and manages the creation and deletion of HTML files.
+
+4. **Customization and Flexibility**:
+   - Templates can be customized for different layouts and styles.
+   - Script can be adapted to handle different data structures in the JSON file.
+
+#### Sample Command
+```bash
+python path_to_script.py /path_to_template_directory /path_to_output_directory /path_to_json_file
+```
+
+- Replace `path_to_script.py` with the actual path to the script file.
+- `/path_to_template_directory` should be the directory where HTML templates are stored.
+- `/path_to_output_directory` is where the generated HTML files will be saved.
+- `/path_to_json_file` is the path to the JSON file containing property listings.
+
 ## Map Page Generator Script
 
 This Python script is designed to generate a map page for property listings, combining a map template with a master template to produce a complete HTML file. It is especially useful for real estate websites that feature interactive maps displaying various properties.
