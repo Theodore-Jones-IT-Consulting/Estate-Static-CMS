@@ -136,7 +136,6 @@ The script that generates pages based on content in the `pages` subfolder of the
 To run the script:
 `python generic_page_generator.py [TEMPLATE_DIR] [OUTPUT_DIR]`
 
-Usage:
 This script is designed to automate the process of generating web pages for a static site.
 It reads content from Markdown (.md) or HTML (.html) files located in the 'pages' subfolder
 within the template directory and injects it into the placeholder of a master template.
@@ -146,7 +145,7 @@ It also supports the execution of Python scripts embedded within the content fil
 referenced as external scripts in the 'scripts' subfolder. These scripts can dynamically
 generate additional HTML content which gets injected into the final pages.
 
-Embedded Scripts:
+Use Shortcodes:
 To embed a Python script directly within an HTML or Markdown file, use the following shortcode:
 
 `[script:script_name param1=value1 param2=value2 ...]`
@@ -174,6 +173,14 @@ in the content files via shortcodes.
 Where:
 - [TEMPLATE_DIR] is the directory containing the 'pages', 'scripts', and master template.
 - [OUTPUT_DIR] is the directory where the generated HTML files will be saved.
+
+As follows is an example of such a script 
+
+```
+def generate_content(params):
+    name = params.get('name', 'World')
+    return f"<p>Hello, {name}!</p>"
+```
 
 Inline Scripts:
 To create and use an inline script within an HTML or Markdown file, embed Python code within
