@@ -5,21 +5,44 @@
 Requirements:
 - Python 3.x
 - Markdown module (for Markdown files conversion)
-
-1. **Dependencies**:
-   - Python environment.
-   - Necessary libraries: `os`, `argparse`, `string`.
-
-1. **Dependencies**:
-   - Python environment.
-   - `json` and `random` libraries for data processing.
-   - `geopy` library for geographical computations.
+- `geopy` library for geographical computations.
 
 # Page Generator Scripts
 
 The page generator scripts can be found at the root folder of this repository 
 
-### Simplified MLS Data Generation Script
+## Map Page Generator Script
+
+This Python script is designed to generate a map page for property listings, combining a map template with a master template to produce a complete HTML file. It is especially useful for real estate websites that feature interactive maps displaying various properties.
+
+- **Functionality**: The script integrates a specific map page template into a master HTML template, embedding dynamic content such as the current year and other custom placeholders.
+- **Output**: The final output is an HTML file named `map.html`, which is saved in a specified output directory.
+
+#### Technical Details
+
+1. **Input**:
+   - HTML template files for the map page and the master page, located in a specified directory.
+
+2. **Execution**:
+   - Run the script via the command line, specifying the directory containing the HTML templates and the directory for the output HTML file.
+
+3. **Key Functions**:
+   - `load_template(template_path)`: Reads and returns an HTML template as a Python `Template` object.
+   - `create_html_page(map_template, master_template, destination_folder)`: Generates the final HTML content by substituting placeholders in the templates and writes it to a file in the destination folder.
+
+4. **Customization**:
+   - The script can be modified to include additional dynamic content in the HTML templates, making it adaptable for different map page designs.
+
+#### Sample Command
+```bash
+python path_to_script.py /path_to_template_directory /path_to_output_directory
+```
+
+- Replace `path_to_script.py` with the actual path to the script file.
+- `/path_to_template_directory` should be replaced with the path to the directory where your HTML templates are stored.
+- `/path_to_output_directory` should be replaced with the path to the directory where you want the generated `map.html` file to be saved.
+
+## Simplified MLS Data Generation Script
 
 This script converts the full MLS data into a smaller, simplified form with fewer data points which can be loaded in bulk by client side JS without using too much download bandwidth, even if thousands of entries are downloaded. This is used by the search page. 
 - **Demo Mode**: Option to generate random coordinates for property listings, useful for demonstrations or testing without using actual location data.
