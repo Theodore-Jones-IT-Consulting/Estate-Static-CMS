@@ -501,7 +501,6 @@ h2, h3 {
 
 <div id="map" style="height: 500px;"></div>
 <div id="visible-listings"></div>
-<button id="load-more" onclick="loadMoreListings()">Load More</button>
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 <style>
 .filter-container {
@@ -594,11 +593,12 @@ var markersCluster = L.markerClusterGroup({
     },
     showCoverageOnHover: true,
     zoomToBoundsOnClick: true,
-    spiderfyOnMaxZoom: true,
-    removeOutsideVisibleBounds: true,
+    spiderfyOnMaxZoom: false,
+    removeOutsideVisibleBounds: false,
     animate: true,
     chunkedLoading: true,
-    animateAddingMarkers: true
+    chunkInterval: 2000,
+    animateAddingMarkers: false
 });
 
 function updateVisibleListings() {
@@ -654,14 +654,14 @@ fetch('mls_data.geojson')
         geojsonLayer = L.geoJSON(geojsonData, {
             onEachFeature: function (feature, layer) {
                 if (feature.properties) {
-                    var popupContent = '<div class="popup-content" style="width:150px;">' +
+                    var popupContent = '<div class="popup-content">' +
                         '<img src="' + feature.properties.listingPhoto + '" alt="Listing photo" style="width:100%;height:auto;">' +
-                        '<h3>' + feature.properties.fullAddress + '</h3>' +
-                        '<p>Price: $' + feature.properties.listPrice.toLocaleString() +
-                        ' | Bedrooms: ' + feature.properties.bedrooms +
-                        ' | Bathrooms: ' + feature.properties.bathrooms + '</p>' +
+                        '<b>' + feature.properties.fullAddress + '</b><br>' +
+                        '$' + feature.properties.listPrice.toLocaleString() +
+                        ' | Bed: ' + feature.properties.bedrooms +
+                        ' | Bath: ' + feature.properties.bathrooms + '' +
                         '</div>';
-                    layer.bindPopup(popupContent, {maxWidth: "auto"});
+                    layer.bindPopup(popupContent, {maxWidth: "200px", autoPan: false});
                 }
             },
             pointToLayer: function (feature, latlng) {
