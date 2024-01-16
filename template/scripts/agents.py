@@ -16,7 +16,7 @@ def generate_content(feedme):
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: flex-start;
+        justify-content: center; /* Updated to center to fix spacing on the right */
     }
     .custom-agent-item {
         background-color: #ffffff;
@@ -24,9 +24,9 @@ def generate_content(feedme):
         border: 1px solid #ddd;
         border-radius: 5px;
         text-align: center;
-        flex: 0 0 250px; /* Fixed flex basis and no growth */
-        display: flex;
-        flex-direction: column;
+        box-sizing: border-box; /* Ensures padding is included in width */
+        width: calc(33.333% - 20px); /* Updated to use width with calc for responsiveness */
+        margin-bottom: 20px; /* Added bottom margin for spacing between rows */
     }
     .custom-agent-item img {
         max-width: 100%;
@@ -52,6 +52,18 @@ def generate_content(feedme):
     }
     .custom-agent-contact a:hover {
         text-decoration: underline;
+    }
+    /* Media query for smaller screens */
+    @media (max-width: 967px) {
+        .custom-agent-item {
+            width: calc(50% - 20px); /* Adjust to 50% for 2 columns */
+        }
+    }
+    /* Media query for even smaller screens */
+    @media (max-width: 680px) {
+        .custom-agent-item {
+            width: 100%; /* Full width for single column layout */
+        }
     }
     </style>
     """
