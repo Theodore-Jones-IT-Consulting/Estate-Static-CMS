@@ -501,7 +501,8 @@ h2, h3 {
 
 <div id="map" style="height: 500px;"></div>
 <div id="visible-listings"></div>
-
+<button id="load-more" onclick="loadMoreListings()">Load More</button>
+<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 <style>
 .filter-container {
     display: flex;
@@ -564,90 +565,117 @@ h2, h3 {
         margin-right: 0; /* Resets margin */
     }
 }
+.my-cluster-icon {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
 </style>
 
 <script>
-    var map = L.map('map').setView([31.9686, -99.9018], 13);
+var map = L.map('map').setView([31.9686, -99.9018], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© OpenStreetMap contributors'
-    }).addTo(map);
+var visibleListingsContainer = document.getElementById('visible-listings');
 
-    var visibleListingsContainer = document.getElementById('visible-listings');
+var markersCluster = L.markerClusterGroup({
+    iconCreateFunction: function(cluster) {
+        return L.divIcon({
+            html: '<b>' + cluster.getChildCount() + '</b>',
+            className: 'my-cluster-icon',
+            iconSize: L.point(40, 40)
+        });
+    },
+    showCoverageOnHover: true,
+    zoomToBoundsOnClick: true,
+    spiderfyOnMaxZoom: true,
+    removeOutsideVisibleBounds: true,
+    animate: true,
+    chunkedLoading: true,
+    animateAddingMarkers: true
+});
 
-    function updateVisibleListings() {
-        visibleListingsContainer.innerHTML = ''; // Clear current listings
-        var bounds = map.getBounds();
-        var visibleListings = [];
+function updateVisibleListings() {
+    visibleListingsContainer.innerHTML = '';
+    var bounds = map.getBounds();
+    var visibleListings = [];
 
-        var maxPrice = document.getElementById('price-filter').value;
-        var minBedrooms = document.getElementById('bedrooms-filter').value;
-        var minBathrooms = document.getElementById('bathrooms-filter').value;
-        var typeFilter = document.getElementById('type-filter').value;
+    var maxPrice = document.getElementById('price-filter').value;
+    var minBedrooms = document.getElementById('bedrooms-filter').value;
+    var minBathrooms = document.getElementById('bathrooms-filter').value;
+    var typeFilter = document.getElementById('type-filter').value;
 
-        geojsonLayer.eachLayer(function (layer) {
-            var property = layer.feature.properties;
+    markersCluster.clearLayers();
 
-            var isVisible = bounds.contains(layer.getLatLng()) && 
-                (!maxPrice || property.listPrice <= maxPrice) &&
-                (!minBedrooms || property.bedrooms >= minBedrooms) &&
-                (!minBathrooms || property.bathrooms >= minBathrooms) &&
-                (!typeFilter || property.propertyType === typeFilter);
+    geojsonLayer.eachLayer(function (layer) {
+        var property = layer.feature.properties;
+        var isVisible = bounds.contains(layer.getLatLng()) && 
+            (!maxPrice || property.listPrice <= maxPrice) &&
+            (!minBedrooms || property.bedrooms >= minBedrooms) &&
+            (!minBathrooms || property.bathrooms >= minBathrooms) &&
+            (!typeFilter || property.propertyType === typeFilter);
 
-            if (isVisible && visibleListings.length < 25) {
-                var listingRow = document.createElement('div');
-                listingRow.className = 'listing-row';
-                listingRow.innerHTML =
-                    '<div class="listing-image">' +
-                        '<img src="' + property.listingPhoto + '" alt="Featured Image">' +
-                    '</div>' +
-                    '<div class="listing-info">' +
-                        '<h3>' + property.fullAddress + '</h3>' +
-                        '<p class="price">Price: $' + property.listPrice.toLocaleString() + '</p>' +
-                    '</div>' +
-                    '<div class="listing-link">' +
-                        '<a href="/listing/listing_' + property.mlsId + '.html' + '">View Details</a>' +
-                    '</div>';
-                visibleListingsContainer.appendChild(listingRow);
-                visibleListings.push(layer);
-                layer.addTo(map); // Show the marker
-            } else {
-                layer.remove(); // Hide the marker
+        if (isVisible && visibleListings.length < 25) {
+            var listingRow = document.createElement('div');
+            listingRow.className = 'listing-row';
+            listingRow.innerHTML =
+                '<div class="listing-image">' +
+                    '<img src="' + property.listingPhoto + '" alt="Featured Image">' +
+                '</div>' +
+                '<div class="listing-info">' +
+                    '<h3>' + property.fullAddress + '</h3>' +
+                    '<p class="price">Price: $' + property.listPrice.toLocaleString() + '</p>' +
+                '</div>' +
+                '<div class="listing-link">' +
+                    '<a href="/listing/listing_' + property.mlsId + '.html' + '">View Details</a>' +
+                '</div>';
+            visibleListingsContainer.appendChild(listingRow);
+            visibleListings.push(layer);
+            markersCluster.addLayer(layer);
+        }
+    });
+
+    map.addLayer(markersCluster);
+
+    if (visibleListings.length === 0) {
+        visibleListingsContainer.innerHTML = '<p>No listings in this area that meet the given criteria. </p>';
+    }
+}
+
+fetch('mls_data.geojson')
+    .then(response => response.json())
+    .then(geojsonData => {
+        geojsonLayer = L.geoJSON(geojsonData, {
+            onEachFeature: function (feature, layer) {
+                if (feature.properties) {
+                    var popupContent = '<div class="popup-content" style="width:150px;">' +
+                        '<img src="' + feature.properties.listingPhoto + '" alt="Listing photo" style="width:100%;height:auto;">' +
+                        '<h3>' + feature.properties.fullAddress + '</h3>' +
+                        '<p>Price: $' + feature.properties.listPrice.toLocaleString() +
+                        ' | Bedrooms: ' + feature.properties.bedrooms +
+                        ' | Bathrooms: ' + feature.properties.bathrooms + '</p>' +
+                        '</div>';
+                    layer.bindPopup(popupContent, {maxWidth: "auto"});
+                }
+            },
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng);
             }
         });
 
-        if (visibleListings.length === 0) {
-            visibleListingsContainer.innerHTML = '<p>No listings in this area that meet the given criteria. </p>';
-        }
-    }
+        map.addLayer(markersCluster);
+        map.fitBounds(geojsonLayer.getBounds());
+        map.on('moveend', updateVisibleListings);
+        updateVisibleListings(); // Initial update
+    })
+    .catch(error => console.error('Error loading GeoJSON data:', error));
 
-    fetch('mls_data.geojson')
-        .then(response => response.json())
-        .then(geojsonData => {
-            geojsonLayer = L.geoJSON(geojsonData, {
-                onEachFeature: function (feature, layer) {
-                    if (feature.properties) {
-                        var popupContent = '<div class="popup-content" style="width:150px;">' +
-                            '<img src="' + feature.properties.listingPhoto + '" alt="Listing photo" style="width:100%;height:auto;">' +
-                            '<h3>' + feature.properties.fullAddress + '</h3>' +
-                            '<p>Price: $' + feature.properties.listPrice.toLocaleString() +
-                            ' | Bedrooms: ' + feature.properties.bedrooms +
-                            ' | Bathrooms: ' + feature.properties.bathrooms + '</p>' +
-                            '</div>';
-                        layer.bindPopup(popupContent, {maxWidth: "auto"});
-                    }
-                },
-                pointToLayer: function (feature, latlng) {
-                    return L.marker(latlng);
-                }
-            }).addTo(map);
-
-            map.fitBounds(geojsonLayer.getBounds());
-            map.on('moveend', updateVisibleListings);
-            updateVisibleListings(); // Initial update
-        })
-        .catch(error => console.error('Error loading GeoJSON data:', error));
 </script>
 
     </div>

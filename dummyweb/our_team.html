@@ -485,63 +485,63 @@ h2, h3 {
     <div class="content">
         
     <style>
-    .custom-agents-section {
-        padding: 20px;
-        background-color: #f5f5f5;
-    }
-    .custom-agents-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center; /* Updated to center to fix spacing on the right */
-    }
+.custom-agents-section {
+    padding: 20px;
+    background-color: var(--background-color);
+}
+.custom-agents-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.custom-agent-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+}
+.custom-agent-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.custom-agent-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.custom-agent-title, .custom-agent-contact, .custom-agent-license {
+    font-weight: bold;
+    color: var(--text-color);
+}
+.custom-agent-bio {
+    font-size: 14px;
+    color: var(--text-color);
+}
+.custom-agent-contact a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+.custom-agent-contact a:hover {
+    text-decoration: underline;
+}
+/* Media query for smaller screens */
+@media (max-width: 967px) {
     .custom-agent-item {
-        background-color: #ffffff;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        text-align: center;
-        box-sizing: border-box; /* Ensures padding is included in width */
-        width: calc(33.333% - 20px); /* Updated to use width with calc for responsiveness */
-        margin-bottom: 20px; /* Added bottom margin for spacing between rows */
+        width: calc(50% - 20px);
     }
-    .custom-agent-item img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 50%;
+}
+/* Media query for even smaller screens */
+@media (max-width: 680px) {
+    .custom-agent-item {
+        width: 100%;
     }
-    .custom-agent-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .custom-agent-title, .custom-agent-contact, .custom-agent-license {
-        font-weight: bold;
-        color: #333;
-    }
-    .custom-agent-bio {
-        font-size: 14px;
-        color: #666;
-    }
-    .custom-agent-contact a {
-        color: #0066cc;
-        text-decoration: none;
-    }
-    .custom-agent-contact a:hover {
-        text-decoration: underline;
-    }
-    /* Media query for smaller screens */
-    @media (max-width: 967px) {
-        .custom-agent-item {
-            width: calc(50% - 20px); /* Adjust to 50% for 2 columns */
-        }
-    }
-    /* Media query for even smaller screens */
-    @media (max-width: 680px) {
-        .custom-agent-item {
-            width: 100%; /* Full width for single column layout */
-        }
-    }
+}
     </style>
     <section class="custom-agents-section">
 <div class="custom-agents-grid">
