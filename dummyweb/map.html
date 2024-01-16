@@ -25,6 +25,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Listings</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+         crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
          crossorigin=""></script>
@@ -402,15 +405,7 @@ h2, h3 {
     </style>
 </head>
 <body>
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
-        link.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
-        link.crossOrigin = '';
-        document.head.appendChild(link);
-    </script>
-    
+
     <div class="top-bar">
         <div class="contact-info">
             <a href="mailto:contact@realestatecompany.com">✉️ contact@realestatecompany.com</a>
@@ -604,7 +599,7 @@ h2, h3 {
     </div>
     <footer class="footer">
         <p>
-            <i class="fas fa-phone"></i> Phone: 123-456-7890 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> Email: contact@realestatecompany.com
+            📞 Phone: 123-456-7890 &nbsp;|&nbsp; ✉️ Email: contact@realestatecompany.com
         </p>
         <p>
             &copy; 2024 Real Estate Company. All rights reserved.
