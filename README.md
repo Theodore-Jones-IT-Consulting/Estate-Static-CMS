@@ -32,6 +32,9 @@ python listing_pages_generator.py template dummyweb/listing mls_data.geojson
 python listing_list_page.py template dummyweb/listings mls_data.geojson
 python generic_page.py template dummyweb
 ```
+## Docker
+
+The docker-compose.yml file hosts the contents of the demo site on an externally visible webserver. The .devcontainer folder contains specifications for a VScode development container.
 
 # Template HTML Files
 
