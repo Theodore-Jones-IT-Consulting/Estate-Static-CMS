@@ -81,6 +81,18 @@ contactMarker.bindPopup("Our Location").openPopup();
 </div>
 
 <style>
+:root {
+  /* Brand colors */
+  --primary-color: #007bff;
+  --accent-color: #c75b39; 
+  --background-color: #f7f7f7;
+  --text-color: #5a4a42;
+  --link-color: #007bff;
+  --link-hover-color: #f0f0f0;
+  --footer-background-color: #333;
+  --footer-text-color: white;
+}
+
 .home-page {
     font-family: 'Open Sans', sans-serif;
     max-width: 1200px;
@@ -91,8 +103,8 @@ contactMarker.bindPopup("Our Location").openPopup();
 .hero {
     text-align: center;
     padding: 4rem 0;
-    background: #f7e7d9;
-    color: #5a4a42;
+    background: var(--background-color);
+    color: var(--text-color);
 }
 
 .hero h1 {
@@ -106,7 +118,7 @@ contactMarker.bindPopup("Our Location").openPopup();
 }
 
 .cta {
-    background-color: #c75b39;
+    background-color: var(--accent-color);
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -117,7 +129,7 @@ contactMarker.bindPopup("Our Location").openPopup();
 }
 
 .cta:hover {
-    background-color: #b24e34;
+    background-color: darken(var(--accent-color), 10%);
 }
 
 .featured-properties, .about-us, .testimonials {
@@ -131,7 +143,7 @@ contactMarker.bindPopup("Our Location").openPopup();
 }
 
 .property-card, .testimonial {
-    background: #fffdf8;
+    background: var(--background-color);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -144,46 +156,22 @@ contactMarker.bindPopup("Our Location").openPopup();
     margin-bottom: 1rem;
 }
 
-.property-card h3 {
-color: #5a4a42;
-margin-bottom: 0.5rem;
+.property-card h3, .property-card .details, .testimonial p, .about-us p {
+    color: var(--text-color);
 }
 
-.property-card .price {
-color: #c75b39;
-font-weight: bold;
-margin-bottom: 0.5rem;
-}
-
-.property-card .details {
-color: #5a4a42;
-margin-bottom: 1rem;
-}
-
-.testimonial p {
-font-style: italic;
-color: #5a4a42;
-}
-
-.testimonial cite {
-display: block;
-color: #c75b39;
-font-weight: bold;
-margin-top: 1rem;
-}
-
-.about-us p {
-color: #5a4a42;
-line-height: 1.6;
+.property-card .price, .testimonial cite {
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
-.hero h1 {
-font-size: 2rem;
-}
-.hero p {
-    font-size: 1rem;
-}
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
 }
 
 .realestate-blurb-container {
@@ -202,7 +190,7 @@ font-size: 2rem;
     margin-bottom: 20px;
 }
 
-.realestate-blurb-intro {
+.realestate-blurb-intro, .realestate-why-choose, .realestate-commitment {
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -224,11 +212,6 @@ font-size: 2rem;
 .realestate-service h3 {
     color: var(--accent-color);
     margin-bottom: 10px;
-}
-
-.realestate-why-choose, .realestate-commitment {
-    margin-bottom: 20px;
-    line-height: 1.6;
 }
 
 .realestate-why-choose ul {
@@ -263,6 +246,4 @@ font-size: 2rem;
     margin-bottom: 10px;
     color: var(--footer-text-color);
 }
-
-
 </style>

@@ -55,80 +55,59 @@
     </div>
 </div>
 
+
 <style>
-.services-section {
-    text-align: center;
-    margin: 1rem 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #5a4a42; /* warmer text color */
-}
-
-.service-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.service {
-    width: calc(50% - 0.5rem);
-    display: inline-block;
-    vertical-align: top;
-    background-color: #fdf4ec; /* warm background */
-    padding: 1rem;
-    border-radius: 8px; /* rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft shadow */
-    border-top: 4px solid #f1c0a5; /* accent border */
-    margin:10px;
-}
-
-.service h3 {
-    color: #c75b39; /* warm heading color */
-}
-
-@media (max-width: 768px) {
-    .service-container {
-        flex-direction: column;
+    .services-section {
+        text-align: center;
+        margin: 1rem 0;
     }
     
-    .service {
-        width: 100%;
-        margin-bottom: 1rem; /* Add space between services on smaller screens */
+    .services-section .service-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
     }
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li:before {
-content: "• ";
-color: #c75b39; /* Use the warm color for bullet points /
-font-weight: bold;
-display: inline-block; / Necessary for the bullet points */
-width: 1em;
-margin-left: -1em;
-}
-
-.intro-text {
-margin-bottom: 2rem;
-color: #7a6a5f; /* Soften the introductory text color */
-}
-
-button {
-background-color: #c75b39; /* Warm button color /
-color: white;
-border: none;
-padding: 0.75rem 1.5rem;
-font-size: 1rem;
-border-radius: 20px; / Rounded button edges */
-cursor: pointer;
-transition: background-color 0.3s;
-}
-
-button:hover {
-background-color: #b24e34; /* Darker shade on hover */
-}
+    
+    .services-section .service {
+        width: calc(50% - 0.5rem);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-top: 4px solid var(--accent-color);
+        margin: 10px;
+        background-color: var(--background-color);
+    }
+    
+    .services-section .service h3 {
+        color: var(--accent-color);
+    }
+    
+    @media (max-width: 768px) {
+        .services-section .service-container {
+            flex-direction: column;
+        }
+        
+        .services-section .service {
+            width: 100%;
+        }
+    }
+    
+    .services-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .services-section li:before {
+        content: "• ";
+        color: var(--accent-color);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+    
+    .services-section .intro-text {
+        margin-bottom: 2rem;
+    }
 </style>
-
-
+    
