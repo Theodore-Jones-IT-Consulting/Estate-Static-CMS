@@ -32,7 +32,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
          crossorigin=""></script>
     <style>
- :root {
+:root {
     /* Brand colors */
     --primary-color: #007bff; /* Example blue color */
     --accent-color: #d9534f; /* Example red color */
@@ -59,11 +59,11 @@ header {
     padding: 1rem 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative; /* Added position relative */
+    z-index: 1010; /* Higher z-index than the menu */
 }
 
 nav.menu {
-    display: flex;
-    justify-content: center;
     background-color: white;
     padding: 0.5rem 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -72,16 +72,64 @@ nav.menu {
     z-index: 1000;
 }
 
-nav.menu a {
-    color: var(--text-color);
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 15px;
+    position: relative;
+    z-index: 1005; /* Higher than content but lower than the header */
+}
+
+.menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items li {
     padding: 0.5rem 1rem;
+}
+
+.menu-items a {
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 400;
     transition: color 0.3s;
 }
 
-nav.menu a:hover, nav.menu a.active {
+.menu-items a:hover, .menu-items a.active {
     color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .menu-items {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 100%; /* Position below the header */
+        left: 0;
+        right: 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Below the header but above content */
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-items li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
 }
 
 .content {
@@ -421,13 +469,16 @@ h2, h3 {
         <a href="/"><h1>Real Estate Company</h1></a>
     </header>
     <nav class="menu">
-        <a href="/">Home</a>
-        <a href="/our_team.html">Our Team</a>
-        <a href="/our_services.html">Services</a>
-        <a href="/testimonials.html">Testimonials</a>
-        <a href="/map.html">Search Homes</a>
-        <a href="/listings">Listings In Our Area</a>
-    </nav>
+        <div class="mobile-menu-icon" onclick="toggleMobileMenu()">☰</div>
+        <ul class="menu-items">
+            <li><a href="/">Home</a></li>
+            <li><a href="/our_team.html">Our Team</a></li>
+            <li><a href="/our_services.html">Services</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+            <li><a href="/map.html">Search Homes</a></li>
+            <li><a href="/listings">Listings In Our Area</a></li>
+        </ul>
+    </nav>    
     <div class="content">
         <!-- Demo Page Header -->
 <h1>Demo Page</h1>
@@ -453,7 +504,7 @@ h2, h3 {
 </p>
 <!-- Inline Python Script Usage Example -->
 <div>
-    <p>Current time: 00:52:39</p>
+    <p>Current time: 02:12:46</p>
 
 </div>
 
@@ -483,6 +534,11 @@ h2, h3 {
             });
         });
     </script>
-    
+<script>
+function toggleMobileMenu() {
+    var menuItems = document.querySelector('.menu-items');
+    menuItems.classList.toggle('active');
+}
+</script>    
 </body>
 </html>
