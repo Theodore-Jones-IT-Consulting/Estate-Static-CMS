@@ -4,7 +4,7 @@ import json
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-TEMPLATES_DIR = 'templates'
+TEMPLATES_DIR = 'template'
 PAGES_DIR = os.path.join(TEMPLATES_DIR, 'pages')
 BLOG_DIR = os.path.join(TEMPLATES_DIR, 'blog')
 SCRIPTS_DIR = os.path.join(TEMPLATES_DIR, 'scripts')
@@ -49,17 +49,52 @@ def site_data():
 def custom_pages(filename=None):
     if request.method == 'GET':
         if filename:
-            return file_operation(PAGES_DIR, filename, 'GET')
+            # Get the file content
+            file_path = os.path.join(PAGES_DIR, secure_filename(filename))
+            if os.path.exists(file_path):
+                with open(file_path, 'r') as file:
+                    content = file.read()
+                return jsonify({"content": content})
+            else:
+                return jsonify({"error": "File not found"}), 404
         else:
+            # List all files
             return jsonify(os.listdir(PAGES_DIR))
     elif request.method == 'POST':
-        new_file = request.files['file']
-        new_file.save(os.path.join(PAGES_DIR, secure_filename(new_file.filename)))
+        # Create a new file
+        file_info = request.json
+        file_name = secure_filename(file_info['name'])
+        file_type = file_info['type']
+        file_path = os.path.join(PAGES_DIR, f"{file_name}.{file_type}")
+        if os.path.exists(file_path):
+            return jsonify({"error": "File already exists"}), 409
+        with open(file_path, 'w') as file:
+            file.write(file_info.get('content', ''))  # Create a new file with optional content
         return jsonify({"message": "File created successfully"})
     elif request.method == 'PUT':
-        return file_operation(PAGES_DIR, filename, 'PUT', request.data.decode('utf-8'))
+        # Update an existing file
+        if filename:
+            file_path = os.path.join(PAGES_DIR, secure_filename(filename))
+            content = request.json.get('content')
+            if os.path.exists(file_path):
+                with open(file_path, 'w') as file:
+                    file.write(content)
+                return jsonify({"message": "File updated successfully"})
+            else:
+                return jsonify({"error": "File not found"}), 404
+        else:
+            return jsonify({"error": "Filename not provided"}), 400
     elif request.method == 'DELETE':
-        return file_operation(PAGES_DIR, filename, 'DELETE')
+        # Delete a file
+        if filename:
+            file_path = os.path.join(PAGES_DIR, secure_filename(filename))
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                return jsonify({"message": "File deleted successfully"})
+            else:
+                return jsonify({"error": "File not found"}), 404
+        else:
+            return jsonify({"error": "Filename not provided"}), 400
 
 @app.route('/blog-posts', methods=['GET', 'POST'])
 @app.route('/blog-posts/<filename>', methods=['GET', 'PUT', 'DELETE'])
@@ -119,6 +154,11 @@ def create_page():
 
     return jsonify({"message": "File created successfully"})
 
+
+
+@app.route('/editor')
+def load_editor():
+    return send_from_directory(os.getcwd(), 'editor.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

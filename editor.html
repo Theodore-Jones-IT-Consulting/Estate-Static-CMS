@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content Editor</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/grapesjs/0.16.18/grapes.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.0/marked.min.js"></script>
+<!-- Include the GrapesJS script -->
+<script src="https://unpkg.com/grapesjs"></script>
+<script src="https://unpkg.com/grapesjs-preset-mautic"></script>
+<script src="https://unpkg.com/grapesjs-blocks-basic"></script>
+<script src="https://unpkg.com/grapesjs-blocks-flexbox"></script>
+
     <style>
         #markdown-editor, #html-editor { margin-top: 20px; }
         #markdown-content { width: 100%; height: 200px; }
@@ -31,12 +37,16 @@
                 <h2>Markdown Editor</h2>
                 <textarea id="markdown-content" class="form-control"></textarea>
                 <div id="markdown-preview" class="mt-3"></div>
+                <button class="btn btn-primary mt-2" onclick="saveMarkdown()">Save</button> <!-- Save button -->
             </div>
-
             <div id="html-editor" style="display:none;">
                 <h2>HTML Editor</h2>
-                <!-- GrapesJS or simple code editor will be initialized here -->
+                <div id="gjs-html-editor">
+                    <!-- GrapesJS Editor will be initialized in this div -->
+                </div>
+                <button class="btn btn-primary mt-2" onclick="saveHtmlContent()">Save HTML</button>
             </div>
+            
         </div>
     </div>
 
@@ -55,6 +65,11 @@ function loadFileList() {
             files.forEach(file => {
                 fileSelector.append(new Option(file, file));
             });
+
+            if (files.length > 0) {
+                // Load the first file by default
+                fileSelector.val(files[0]).change();
+            }
         },
         error: function(error) {
             console.error("Error loading files: ", error);
@@ -67,18 +82,23 @@ function loadFile() {
     const fileType = selectedFile.split('.').pop();
 
     $.ajax({
-        url: '/pages/' + selectedFile, // Adjust URL as per your Flask routes
+        url: '/pages/' + selectedFile,
         type: 'GET',
-        success: function(data) {
+        success: function(response) {
             if (fileType === 'md') {
                 $('#markdown-editor').show();
                 $('#html-editor').hide();
-                $('#markdown-content').val(data);
-                $('#markdown-preview').html(marked(data));
+                $('#markdown-content').val(response.content);
+                $('#markdown-preview').html(marked(response.content));
             } else if (fileType === 'html') {
                 $('#markdown-editor').hide();
                 $('#html-editor').show();
-                initHtmlEditor(data);
+
+                if (!editor) {
+                    initHtmlEditor(response.content);
+                } else {
+                    editor.setComponents(response.content);
+                }
             }
         },
         error: function(error) {
@@ -112,6 +132,26 @@ function createFile() {
     });
 }
 
+function saveHtmlContent() {
+    const selectedFile = $('#file-selector').val();
+    const htmlContent = editor.getHtml() + '<style>' + editor.getCss() + '</style>';
+
+    $.ajax({
+        url: '/pages/' + selectedFile,
+        type: 'PUT',
+        contentType: 'application/json',
+        data: JSON.stringify({ content: htmlContent }),
+        success: function(response) {
+            alert("HTML content saved successfully!");
+            console.log(response.message);
+        },
+        error: function(error) {
+            console.error("Error saving HTML content: ", error);
+            alert("Error saving HTML content: " + error.responseText);
+        }
+    });
+}
+
 function deleteFile() {
     const selectedFile = $('#file-selector').val();
 
@@ -127,41 +167,56 @@ function deleteFile() {
         }
     });
 }
+// Global variable to hold the GrapesJS editor instance
+var editor = null;
 
 function initHtmlEditor(htmlContent) {
-    // Initialize GrapesJS editor
-    const editor = grapesjs.init({
-        container: '#html-editor',
-        fromElement: true,
-        clearOnRender: true,
-        height: '300px',
-        storageManager: {
-            id: 'gjs-',             
-            type: 'local',          
-            autosave: true,         
-            autoload: true,         
-            stepsBeforeSave: 1,     
-        },
-        components: htmlContent
-    });
+    // Make sure that htmlContent is not null or undefined
+    htmlContent = htmlContent || '';
 
-    // Initialize the Bootstrap plugin
-    editor.PluginManager.add('gjs-plugin-bootstrap', editor => {
-        // Add Bootstrap components to the block manager
-        const blockManager = editor.BlockManager;
-
-        // Example of adding a Bootstrap button
-        blockManager.add('bootstrap-button', {
-            label: 'Button',
-            content: '<button type="button" class="btn btn-primary">Button</button>',
-            category: 'Bootstrap',
+    // Check if the GrapesJS editor is already initialized
+    if (!editor) {
+        // Initialize GrapesJS editor with the given content
+        editor = grapesjs.init({
+            container: '#gjs-html-editor',
+            fromElement: true,
+            clearOnRender: true,
+            height: '600px',
+            storageManager: false, // Disable the default storage manager
+            components: htmlContent,
+            plugins: ['grapesjs-preset-mautic', 'gjs-blocks-basic', 'grapesjs-blocks-flexbox'] , // Correct plugin names
+            pluginsOpts: {
+                'grapesjs-preset-mautic': {},
+                'gjs-blocks-basic': {}, 
+                'grapesjs-blocks-flexbox': {}
+                // Plugin options here, if needed
+            }
         });
+    } else {
+        // If already initialized, just update the contents
+        editor.setComponents(htmlContent);
+    }
+}
 
-        // Additional Bootstrap components can be added here
+
+function saveMarkdown() {
+    const selectedFile = $('#file-selector').val();
+    const markdownContent = $('#markdown-content').val();
+
+    $.ajax({
+        url: '/pages/' + selectedFile, // Adjust URL as per your Flask routes
+        type: 'PUT',
+        contentType: 'application/json',
+        data: JSON.stringify({ content: markdownContent }), // Send as JSON
+        success: function(response) {
+            alert("Markdown content saved successfully!");
+            console.log(response.message);
+        },
+        error: function(error) {
+            console.error("Error saving markdown content: ", error);
+            alert("Error saving markdown content: " + error.responseText);
+        }
     });
-
-    // Run the Bootstrap plugin
-    editor.PluginManager.get('gjs-plugin-bootstrap').run(editor);
 }
 
 function saveChanges() {
@@ -172,21 +227,21 @@ function saveChanges() {
     if (fileType === 'md') {
         data = $('#markdown-content').val();
     } else if (fileType === 'html') {
-        // Retrieve HTML content from GrapesJS
-        const editor = grapesjs.getEditor(); // Assuming a single instance
-        data = editor.getHtml();
+        data = editor.getHtml() + '<style>' + editor.getCss() + '</style>'; // Get HTML and CSS from GrapesJS editor
     }
 
     $.ajax({
-        url: '/pages/' + selectedFile, // Adjust URL as per your Flask routes
+        url: '/pages/' + selectedFile,
         type: 'PUT',
-        contentType: 'text/plain',
-        data: data,
+        contentType: 'application/json',
+        data: JSON.stringify({ content: data }), // Send content in JSON format
         success: function(response) {
+            alert("Content saved successfully!");
             console.log(response.message);
         },
         error: function(error) {
-            console.error("Error saving file: ", error);
+            console.error("Error saving content: ", error);
+            alert("Error saving content: " + error.responseText);
         }
     });
 }
@@ -195,6 +250,10 @@ function saveChanges() {
 $('#markdown-content').on('input', function() {
     const markdownContent = $(this).val();
     $('#markdown-preview').html(marked(markdownContent));
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    loadFileList();
 });
 
     </script>
