@@ -1,0 +1,4 @@
+[
+    {"path": "template/pages", "ui_name": "Pages"},
+    {"path": "template/blog", "ui_name": "Blog"}
+]
