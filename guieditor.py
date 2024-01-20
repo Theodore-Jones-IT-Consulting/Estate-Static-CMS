@@ -198,7 +198,7 @@ def create_page():
 
 
 
-@app.route('/editor')
+@app.route('/')
 def load_editor():
     return send_from_directory(os.getcwd(), 'editor.html')
 
