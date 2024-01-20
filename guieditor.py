@@ -118,13 +118,55 @@ def blog_posts(filename=None):
 def custom_shortcodes(filename=None):
     if request.method == 'GET':
         if filename:
-            return file_operation(SCRIPTS_DIR, filename, 'GET')
+            file_path = os.path.join(SCRIPTS_DIR, secure_filename(filename))
+            if os.path.exists(file_path):
+                with open(file_path, 'r') as file:
+                    content = file.read()
+                return jsonify({"content": content})  # Send content as JSON
+            else:
+                return jsonify({"error": "File not found"}), 404
         else:
+            # Return a list of available shortcode files
             return jsonify(os.listdir(SCRIPTS_DIR))
+
     elif request.method == 'PUT':
-        return file_operation(SCRIPTS_DIR, filename, 'PUT', request.data.decode('utf-8'))
+        if filename:
+            file_path = os.path.join(SCRIPTS_DIR, secure_filename(filename))
+            content = request.json.get('content')
+            if os.path.exists(file_path):
+                with open(file_path, 'w') as file:
+                    file.write(content)
+                return jsonify({"message": "File updated successfully"})
+            else:
+                return jsonify({"error": "File not found"}), 404
+        else:
+            return jsonify({"error": "Filename not provided"}), 400
+
     elif request.method == 'DELETE':
-        return file_operation(SCRIPTS_DIR, filename, 'DELETE')
+        if filename:
+            file_path = os.path.join(SCRIPTS_DIR, secure_filename(filename))
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                return jsonify({"message": "File deleted successfully"})
+            else:
+                return jsonify({"error": "File not found"}), 404
+        else:
+            return jsonify({"error": "Filename not provided"}), 400
+
+@app.route('/shortcodes/create', methods=['POST'])
+def create_shortcode():
+    file_info = request.json
+    file_name = secure_filename(file_info['name'])
+    file_path = os.path.join(SCRIPTS_DIR, file_name)
+
+    if os.path.exists(file_path):
+        return jsonify({"error": "Shortcode already exists"}), 409
+
+    with open(file_path, 'w') as file:
+        file.write("# New shortcode")  # Initial content for the file
+
+    return jsonify({"message": "Shortcode created successfully"})
+
 
 @app.route('/templates', methods=['GET'])
 @app.route('/templates/<path:filepath>', methods=['GET', 'PUT', 'DELETE'])

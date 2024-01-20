@@ -1,109 +1,112 @@
 {
-    "phone": "+1234567890",
-    "email": "contact@example.com",
-    "social_media": {
-        "facebook": "https://facebook.com/example",
-        "linkedin": "https://linkedin.com/example",
-        "twitter": "https://twitter.com/example",
-        "zillow": "",
-        "yelp": "",
-        "mastodon": "https://mastodon.example.com/@example"
-    },
     "agents": [
         {
-            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705341683/pexels-karolina-grabowska-8528852_uae8sq.jpg",
-            "name": "Jane Doe",
-            "title": "Real Estate Agent",
-            "license_number": "AB1234567",
-            "phone": "+1234567891",
-            "email": "jane.doe@example.com",
             "bio": "Jane Doe has been a dedicated real estate agent for over 10 years. She is known for her expertise in residential properties and exceptional customer service. Jane's clients appreciate her attention to detail and her ability to negotiate favorable deals.",
+            "email": "jane.doe@example.com",
+            "homepage": true,
+            "license_number": "AB1234567",
+            "name": "Jane Doe",
+            "order": 1,
+            "phone": "+1234567891",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705341683/pexels-karolina-grabowska-8528852_uae8sq.jpg",
             "social_media": {
                 "facebook": "https://facebook.com/janedoe",
                 "linkedin": "https://linkedin.com/in/janedoe",
                 "twitter": "https://twitter.com/janedoe"
             },
-            "order": 1,
-            "homepage": true
+            "title": "Real Estate Agent"
         },
         {
-            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705342809/pexels-lawal-adeyanju-16465173_txrcao.jpg",
-            "name": "John Smith",
-            "title": "Senior Real Estate Agent",
-            "license_number": "CD2345678",
-            "phone": "+1234567892",
-            "email": "john.smith@example.com",
             "bio": "John Smith is a senior real estate agent with 15 years of experience in the industry. He specializes in commercial real estate and investment properties. John's extensive market knowledge and professional network make him a valuable asset to his clients.",
+            "email": "john.smith@example.com",
+            "homepage": false,
+            "license_number": "CD2345678",
+            "name": "John Smith",
+            "order": 2,
+            "phone": "+1234567892",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705342809/pexels-lawal-adeyanju-16465173_txrcao.jpg",
             "social_media": {
                 "facebook": "https://facebook.com/johnsmith",
                 "linkedin": "https://linkedin.com/in/johnsmith",
                 "twitter": "https://twitter.com/johnsmith"
             },
-            "order": 2,
-            "homepage": false
+            "title": "Senior Real Estate Agent"
         },
         {
-            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705342455/pexels-karolina-grabowska-7680212_fi0ffo.jpg",
-            "name": "Emma Johnson",
-            "title": "Real Estate Consultant",
-            "license_number": "EF3456789",
-            "phone": "+1234567893",
-            "email": "emma.johnson@example.com",
             "bio": "Emma Johnson has been a real estate consultant for over 12 years, focusing on luxury properties. She brings a unique perspective to the market, combining innovative marketing strategies with traditional methods.",
+            "email": "emma.johnson@example.com",
+            "homepage": true,
+            "license_number": "EF3456789",
+            "name": "Emma Johnson",
+            "order": 3,
+            "phone": "+1234567893",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1705342455/pexels-karolina-grabowska-7680212_fi0ffo.jpg",
             "social_media": {
                 "facebook": "https://facebook.com/emmajohnson",
                 "linkedin": "https://linkedin.com/in/emmajohnson",
                 "twitter": "https://twitter.com/emmajohnson"
             },
-            "order": 3,
-            "homepage": true
+            "title": "Real Estate Consultant"
         },
         {
-            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/c_crop,ar_1:1/v1705358746/pexels-andrea-piacquadio-785667_ke4xzt.jpg",
-            "name": "Olivia Brown",
-            "title": "Associate Real Estate Agent",
-            "license_number": "GH4567890",
-            "phone": "+1234567894",
-            "email": "olivia.brown@example.com",
             "bio": "Olivia Brown, an associate real estate agent, has 8 years of experience in the field. She is passionate about helping first-time homebuyers find their perfect home. Olivia's approachable demeanor and in-depth knowledge of the local market have consistently earned her high client satisfaction ratings.",
+            "email": "olivia.brown@example.com",
+            "homepage": false,
+            "license_number": "GH4567890",
+            "name": "Olivia Brown",
+            "order": 4,
+            "phone": "+1234567894",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/c_crop,ar_1:1/v1705358746/pexels-andrea-piacquadio-785667_ke4xzt.jpg",
             "social_media": {
                 "facebook": "https://facebook.com/oliviabrown",
                 "linkedin": "https://linkedin.com/in/oliviabrown",
                 "twitter": "https://twitter.com/oliviabrown"
             },
-            "order": 4,
-            "homepage": false
+            "title": "Associate Real Estate Agent"
         },
         {
-            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/v1705358992/pexels-nappy-936043_guyofz.jpg",
-            "name": "Michael Davis",
-            "title": "Real Estate Broker",
-            "license_number": "IJ5678901",
-            "phone": "+1234567895",
-            "email": "michael.davis@example.com",
             "bio": "Michael Davis is a distinguished real estate broker with over 20 years of experience. He has a proven track record in both residential and commercial real estate. Michael's strategic approach and negotiation skills have made him a top broker in the region.",
+            "email": "michael.davis@example.com",
+            "homepage": true,
+            "license_number": "IJ5678901",
+            "name": "Michael Davis",
+            "order": 5,
+            "phone": "+1234567895",
+            "profile_photo_url": "https://res.cloudinary.com/dwkjuhb46/image/upload/v1705358992/pexels-nappy-936043_guyofz.jpg",
             "social_media": {
                 "facebook": "https://facebook.com/michaeldavis",
                 "linkedin": "https://linkedin.com/in/michaeldavis",
                 "twitter": "https://twitter.com/michaeldavis"
             },
-            "order": 5,
-            "homepage": true
+            "title": "Real Estate Broker"
         }
     ],
+    "email": "contact@example.com",
     "listings": [
         {
-            "mls_number": "123456",
             "address": "123 Main St",
-            "city": "Anytown",
-            "state": "CA",
-            "zip_code": "90210",
-            "price": 750000,
-            "bedrooms": 3,
             "bathrooms": 2,
+            "bedrooms": 3,
+            "city": "Anytown",
+            "coordinates": {
+                "lat": 34.052235,
+                "lng": -118.243683
+            },
             "description": "Charming 3-bedroom home located in the heart of the city...",
-            "coordinates": {"lat": 34.052235, "lng": -118.243683},
-            "listing_order": 1
+            "listing_order": 1,
+            "mls_number": "123456",
+            "price": 750000,
+            "state": "CA",
+            "zip_code": "90210"
         }
-    ]
+    ],
+    "phone": "+1234567890",
+    "social_media": {
+        "facebook": "https://facebook.com/example",
+        "linkedin": "https://linkedin.com/example",
+        "mastodon": "https://mastodon.example.com/@example",
+        "twitter": "https://twitter.com/example",
+        "yelp": "",
+        "zillow": ""
+    }
 }
